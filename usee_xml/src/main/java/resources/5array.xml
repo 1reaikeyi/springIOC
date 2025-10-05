@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <bean id="arrayBean1" class="a5array.array">
+            <property name = "array" value = "1,2,3,4,5,6,7,8,9,10"/>
+    </bean>
+    <bean id ="arrayBean2" class="a5array.array">
+            <property name = "array">
+               <array>
+                   <value>eat</value>
+                   <value>sleep</value>
+                   <value>play</value>
+               </array>
+            </property>
+    </bean>
+<!--    <bean id="arrayBean3" class="a5array.array">-->
+<!--        <constructor-arg value="eat,sleep,play,code,study,run,swim,walk,bike"/>-->
+<!--    </bean>-->
+        <bean id="arrayBean3" class="a5array.array">
+            <constructor-arg name="array" >
+                   <array>
+                       <value>eat</value>
+                       <value>sleep</value>
+                       <value>play</value>
+                   </array>
+            </constructor-arg>
+        </bean>
+
+</beans>
