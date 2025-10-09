@@ -1,4 +1,4 @@
-package a10factory;
+package a1factory;
 
 public class Gun extends Ku{
     @Override
