@@ -1,4 +1,4 @@
-import a1factory.*;
+import afactory.*;
 
 public class Testku {
 //    1

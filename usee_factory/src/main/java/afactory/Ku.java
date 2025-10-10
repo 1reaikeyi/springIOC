@@ -1,4 +1,4 @@
-package a1factory;
+package afactory;
 
 public abstract class Ku {
     public abstract void print();
