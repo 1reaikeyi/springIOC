@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 根标签：Spring IoC容器的入口 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       ">
+
+    <!-- 此处配置Bean、依赖注入等内容 -->
+    <bean id="bean1" class="dlife.Lifecycle" init-method="ininBean" destroy-method="destroyBean">
+    <property name="id" value="1"/>
+    </bean>
+    <bean class="dlife.Logbean"/>
+<!--    <bean id="bean2" class="dlife.Lifecycle" init-method="inin" destroy-method="destroy">-->
+<!--        <constructor-arg name="id" value="100"/>-->
+<!--    </bean>-->
+</beans>
