@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 根标签：Spring IoC容器的入口 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       ">
+
+    <!-- 此处配置Bean、依赖注入等内容 -->
+    <bean id="onebean" class="emutualdependency.One" scope="singleton">
+        <property name="friend" value="first"/>
+        <property name="two" ref="twobean"/>
+    </bean>
+<!--    必须有一方是单例-->
+    <bean id="twobean" class="emutualdependency.Two" scope="prototype">
+        <property name="friend" value="second"/>
+        <property name="one" ref="onebean"/>
+    </bean>
+</beans>
