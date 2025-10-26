@@ -1,6 +1,6 @@
 import aproxy.Order;
 import aproxy.Ordertime;
-import aproxy.Person;
+import bJDKproxy.Person;
 
 public class TestOrder {
     public static void main(String[] args) {
