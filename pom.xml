@@ -13,6 +13,8 @@
         <module>usee_factory</module>
         <module>usee_anotate</module>
         <module>use_proxy</module>
+        <module>use_AOP</module>
+        <module>usee_Mybatis</module>
     </modules>
     <dependencies>
         <dependency>

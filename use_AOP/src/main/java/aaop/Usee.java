@@ -1,10 +1,10 @@
-package eAop;
+package aaop;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 @Configuration
-@ComponentScan(basePackages ={"eAop"})
+@ComponentScan(basePackages ={"aaop"})
 @Component("usee")
 public class Usee {
     public void save(){
