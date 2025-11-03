@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Proxy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Proxy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/use_AOP/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/use_AOP/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/use_proxy/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/use_proxy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usee_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usee_MVC/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usee_Mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usee_Mybatis/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_anotate/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_anotate/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_factory/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_factory/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_mvc/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_mvc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_xml/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/usee_xml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml/src/main/resources" charset="UTF-8" />
   </component>
 </project>

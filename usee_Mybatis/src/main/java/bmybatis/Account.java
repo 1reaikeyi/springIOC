@@ -3,15 +3,11 @@ package bmybatis;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
-
-@Configuration
-@ComponentScan(basePackages = {"bmybatis"})
-@Component("ajbdc")
+@Component("account")
 public class Account {
     private String accountant;
     private int money;
     public Account() {
-
     }
 
     public Account(String accountant, int money) {
