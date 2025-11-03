@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 @Configuration
 @ComponentScan("ajbdc")
-@Component("ajbdc")
+@Component("account")
 public class Account {
     private String accountant;
     private int money;
