@@ -14,7 +14,6 @@
         <module>annotion</module>
         <module>Proxy</module>
         <module>Aop</module>
-        <module>mybatis</module>
         <module>mvc</module>
 
     </modules>

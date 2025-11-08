@@ -9,6 +9,15 @@ import org.springframework.stereotype.Component;
 public class Account {
     private String accountant;
     private int money;
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountant='" + accountant + '\'' +
+                ", money=" + money +
+                '}';
+    }
+
     public Account() {
 
     }

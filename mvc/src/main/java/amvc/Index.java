@@ -7,10 +7,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @Controller
-public class Usee {
-    @RequestMapping("/Main")
+public class Index {
+    @RequestMapping("/Index")
     public String index() {
         return "main";
     }
+
 //    web 配置 → mvc 配置 → 控制器（Main） → 视图（index）
 }
