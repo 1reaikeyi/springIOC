@@ -4,20 +4,21 @@
 
     <artifactId>mvc</artifactId>
     <packaging>war</packaging>
-    <name>mvc Maven Webapp</name>
-    <url>http://maven.apache.org</url>
     <dependencies>
+<!--        测试-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+<!--        web-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>6.0.13</version>
         </dependency>
+<!--        servlet-->
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
@@ -32,7 +33,4 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <finalName>mvc</finalName>
-    </build>
 </project>

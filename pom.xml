@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>xml</module>
-        <module>factory</module>
+        <module>beanlife</module>
         <module>annotion</module>
         <module>Proxy</module>
         <module>Aop</module>

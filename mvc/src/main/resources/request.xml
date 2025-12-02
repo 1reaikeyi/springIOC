@@ -2,13 +2,10 @@
 <!-- 根标签：Spring IoC容器的入口 -->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <!-- 1. 开启组件扫描（不变，扫描控制器） -->
-    <context:component-scan base-package="amvc"/>
-
+    <context:component-scan base-package="Brequest"/>
     <!-- Thymeleaf视图解析器配置 -->
     <bean id="thymeleafViewResolver" class="org.thymeleaf.spring6.view.ThymeleafViewResolver">
         <!-- 设置字符编码为UTF-8，确保中文等特殊字符正确显示 -->
@@ -24,7 +21,7 @@
                     <!-- Spring资源模板解析器 -->
                     <bean class="org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver">
                         <!-- 设置模板文件的前缀路径，模板文件存放在classpath下的templates目录 -->
-                        <property name="prefix" value="classpath:/templates/"/>
+                        <property name="prefix" value="classpath:/request/"/>
                         <!-- 设置模板文件的后缀名，视图文件使用.html扩展名 -->
                         <property name="suffix" value=".html"/>
                         <!-- 设置模板模式为HTML -->
@@ -36,4 +33,5 @@
             </bean>
         </property>
     </bean>
+
 </beans>
