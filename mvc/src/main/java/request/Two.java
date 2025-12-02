@@ -1,4 +1,4 @@
-package Brequest;
+package request;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

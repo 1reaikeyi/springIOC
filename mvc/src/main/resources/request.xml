@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <context:component-scan base-package="Brequest"/>
+    <context:component-scan base-package="request"/>
     <!-- Thymeleaf视图解析器配置 -->
     <bean id="thymeleafViewResolver" class="org.thymeleaf.spring6.view.ThymeleafViewResolver">
         <!-- 设置字符编码为UTF-8，确保中文等特殊字符正确显示 -->
