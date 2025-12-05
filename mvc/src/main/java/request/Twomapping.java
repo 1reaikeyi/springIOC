@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/product")
-public class Two {
+public class Twomapping {
     @RequestMapping("/two")
     public String two() {
         return "Two";
