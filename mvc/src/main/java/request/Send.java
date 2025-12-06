@@ -14,10 +14,10 @@ public class Send {
 
     @RequestMapping(value = "/params", params = {"username", "password"})
     public String params(){
-        return "Vague";  // 返回视图名称
+        return "Send";  // 返回视图名称
     }
     @RequestMapping(value = "header", headers = {"Referer", "host"})
     public String header(){
-        return "Vague";
+        return "Send";  // 返回视图名称
     }
 }
