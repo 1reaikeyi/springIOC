@@ -28,6 +28,12 @@
         <!-- Thymeleaf视图引擎 -->
         <dependency>
             <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.1.2.RELEASE</version>
+        </dependency>
+        <!-- Thymeleaf视图引擎结合spring -->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf-spring6</artifactId>
             <version>3.1.2.RELEASE</version>
         </dependency>

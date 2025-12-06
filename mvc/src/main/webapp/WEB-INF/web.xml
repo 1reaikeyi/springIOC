@@ -11,8 +11,12 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:request.xml</param-value>
-<!--            <param-value>classpath:templates.xml</param-value>-->
         </init-param>
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:templates.xml</param-value>-->
+<!--            <param-value>classpath:request.xml</param-value>-->
+<!--        </init-param>-->
 
     </servlet>
 <!--    请求-->
