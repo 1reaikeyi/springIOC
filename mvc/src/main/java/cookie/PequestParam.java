@@ -33,12 +33,12 @@ public class PequestParam {
 //        return "www";
 //    }
     //使用PoJo对象获取请求参数
-//    @RequestMapping("/post")
-//    public String post(Register register) {
-//        System.out.println("/post");
-//        System.out.println(register);
-//        return "www";
-//    }
+    @RequestMapping("/post")
+    public String post(Register register) {
+        System.out.println("/post");
+        System.out.println(register);
+        return "www";
+    }
     @RequestMapping("/header")
     public String referer(@RequestHeader(value = "Referer",required = false) String referer,
                         @RequestHeader("host") String host){
@@ -47,11 +47,11 @@ public class PequestParam {
         System.out.println("host = " + host);
         return "www";
     }
-    @RequestMapping("/post")
-    public String post(@CookieValue(value = "id",required = false) String id,
-                       @CookieValue(value = "username",required = false) String username){
-        System.out.println("id = " + id);
-        System.out.println("username = " + username);
-        return "www";
-    }
+//    @RequestMapping("/post")
+//    public String post(@CookieValue(value = "id",required = false) String id,
+//                       @CookieValue(value = "username",required = false) String username){
+//        System.out.println("id = " + id);
+//        System.out.println("username = " + username);
+//        return "www";
+//    }
 }
