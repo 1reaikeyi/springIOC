@@ -5,8 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+<p>response测试</p>
 <h1 th:text="${message}">失败</h1>
-
+<br>
+<p>session测试</p>
+<h1 th:text="${session.session_message}">失败</h1>
+<h1 th:text="${session.session_x}">失败</h1>
+<h1 th:text="${session.session_y}">失败</h1>
 <br>
 </body>
 </html>
