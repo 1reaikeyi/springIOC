@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @Controller
 @SessionAttributes(value = {"session_x", "session_y"})
 public class Session {
-    @RequestMapping("/yu")
-    public String test() {
-        return "request";
-    }
+//    @RequestMapping("/yu")
+//    public String test() {
+//        return "request";
+//    }
     @RequestMapping("/httpsession")
     public String session(HttpSession session) {
         session.setAttribute("session_message", "Hello World");
@@ -23,7 +23,7 @@ public class Session {
     }
     @RequestMapping("/session")
     public String session2(ModelMap model) {
-        model.addAttribute("session_message", "Hello World");
+//        model.addAttribute("session_message", "Hello World");
         model.addAttribute("session_x", "使用@SessionAttributes注解");
         model.addAttribute("session_y", "使用@SessionAttributes注解");
         System.out.println(model.getClass());

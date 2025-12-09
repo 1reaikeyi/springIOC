@@ -17,6 +17,7 @@
         <module>mvc</module>
         <module>spring_mybatis</module>
     </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
