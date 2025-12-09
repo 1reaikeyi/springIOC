@@ -7,10 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Application {
-    @RequestMapping("/yu")
-    public String test() {
-        return "request";
-    }
+
     @RequestMapping("/httpApplication")
     public String session(HttpServletRequest request) {
         ServletContext application = request.getServletContext();
