@@ -3,6 +3,7 @@ package request;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class Vague {
@@ -21,12 +22,14 @@ public class Vague {
 //    public String vague3() {
 //        return "Vague";
 //    }
-    @RequestMapping("/{username}/{password}")
+    @RequestMapping("/{username}/{ID}")
     public String login(@PathVariable
                             String username,
                         @PathVariable
-                        String password) {
-        System.out.println("用户名：" + username+"\t密码："+password);
+                        String ID) {
+        System.out.println("用户名：" + username+"\t密码："+ID);
         return "Vague";
     }
+
+
 }

@@ -29,6 +29,12 @@
 <form action="http://localhost:8080/head" method="post">
     <button type="submit">发送HEAD请求</button>
 </form>
+<br>
+<a th:href="@{/params(username='admin',password='1')}">th:params</a>
+<br>
+<a th:href="@{/header}">th:header</a>
+<br>
+
 
 
 </body>
