@@ -1,6 +1,4 @@
-package aproxy;
-
-import bJDKproxy.Person;
+package proxy.bJDKproxy;
 
 public class Order implements Person {
     @Override

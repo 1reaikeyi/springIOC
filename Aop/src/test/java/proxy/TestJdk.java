@@ -1,10 +1,8 @@
+package proxy;
+
 import bJDKproxy.NewProxy;
 import bJDKproxy.Order;
 import bJDKproxy.Person;
-
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 public class TestJdk {
     public static void main(String[] args) throws Exception {

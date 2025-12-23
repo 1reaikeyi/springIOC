@@ -1,6 +1,6 @@
-package aproxy;
+package proxy.aproxy;
 
-import bJDKproxy.Person;
+import proxy.bJDKproxy.Person;
 
 public class Ordertime implements Person {
     private Person order;

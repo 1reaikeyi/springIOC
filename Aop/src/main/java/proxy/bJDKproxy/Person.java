@@ -1,4 +1,4 @@
-package aproxy;
+package proxy.bJDKproxy;
 
 public interface Person {
     void save() throws InterruptedException;

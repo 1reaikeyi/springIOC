@@ -1,3 +1,5 @@
+package proxy;
+
 import cCGLIB.NewProxy;
 //import bJDKproxy.NewProxy;
 import cCGLIB.Order;

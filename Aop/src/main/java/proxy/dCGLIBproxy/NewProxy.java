@@ -1,4 +1,4 @@
-package dCGLIBproxy;
+package proxy.dCGLIBproxy;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

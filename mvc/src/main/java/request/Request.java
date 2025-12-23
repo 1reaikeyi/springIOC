@@ -36,7 +36,7 @@ public class Request {
     }
     @RequestMapping(value = "/params", params = {"username", "password"})
     public String params(){
-        return "www";  // 返回视图名称
+        return "www";
     }
     @RequestMapping(value = "header", headers = {"Referer", "host"})
     public String header(){

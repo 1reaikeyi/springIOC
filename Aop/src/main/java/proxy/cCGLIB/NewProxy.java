@@ -1,4 +1,4 @@
-package cCGLIB;
+package proxy.cCGLIB;
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.MethodDelegation;

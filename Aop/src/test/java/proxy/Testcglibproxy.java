@@ -1,3 +1,5 @@
+package proxy;
+
 import dCGLIBproxy.NewProxy;
 import dCGLIBproxy.Order;
 
