@@ -7,11 +7,16 @@
     <servlet>
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <!-- RESTFUL.xml-->
+    <!-- AJAX.xml-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:REST.xml</param-value>
+            <param-value>classpath:AJAX.xml</param-value>
         </init-param>
+    <!-- RESTFUL.xml-->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:REST.xml</param-value>-->
+<!--        </init-param>-->
     <!--forward.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
