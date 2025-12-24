@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
 
 
 @Controller
@@ -25,8 +21,8 @@ public class AJAXController {
     @RequestMapping("/ajax")
     @ResponseBody
     public String responsebody(){
-        System.out.println("welcome---------------------");
-        return "welcome!!!";
+        System.out.println("welcome---------------王者峡谷");
+        return "welcome 虚拟世界";
     }
 
 
