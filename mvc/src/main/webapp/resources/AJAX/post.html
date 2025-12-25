@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>AJAX请求</title>
@@ -7,12 +7,37 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+<form th:action="@{/save}" method="post">
+    姓名：<input type="text" name="name"/>
+    <button type="submit">提交</button>
+</form>
+<!--<div id="app">-->
+<!--    <button @click="getMessage">获取get消息</button>-->
+<!--    <h1>{{message}}</h1>-->
+<!--</div>-->
+<!--<script>-->
+<!--    Vue.createApp({-->
+<!--        data() {-->
+<!--            return {-->
+<!--                message: ''-->
+<!--            }-->
+<!--        },-->
+<!--        methods: {-->
+<!--            async getMessage() {-->
+<!--                const response = await axios.get('/ajaxGet');-->
+<!--                this.message = response.data;-->
+<!--            }-->
+<!--        }-->
+<!--    }).mount('#app');-->
+<!--</script>-->
 <div id="app">
-    <button @click="getMessage">获取消息</button>
+    <button @click="postMessage">获取post消息</button>
     <h1>{{message}}</h1>
 </div>
 
 <script>
+    let object = {"username": "John","id": 30}
+
     Vue.createApp({
         data() {
             return {
@@ -20,12 +45,27 @@
             }
         },
         methods: {
-            async getMessage() {
-                const response = await axios.get('/ajax');
-                this.message = response.data;
+            async postMessage() {
+                try {
+                    // 将JavaScript对象转换为JSON字符串
+                    const jsonData = JSON.stringify(object);
+                    console.log('发送的JSON数据:', jsonData);
+
+                    // 使用POST请求发送JSON数据
+                    const response = await axios.post('/ajaxPost', jsonData, {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    this.message = response.data;
+                } catch (error) {
+                    console.error('发送失败:', error);
+                    this.message = '发送失败: ' + error.message;
+                }
             }
         }
     }).mount('#app');
+
 </script>
 </body>
 </html>
