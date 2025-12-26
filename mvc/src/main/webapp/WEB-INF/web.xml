@@ -13,6 +13,12 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:file.xml</param-value>
         </init-param>
+        <!-- 文件上传-->
+        <multipart-config>
+            <max-file-size>10485760</max-file-size>
+            <max-request-size>10485760</max-request-size>
+            <file-size-threshold>0</file-size-threshold>
+        </multipart-config>
     <!-- AJAX.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
@@ -75,6 +81,8 @@
         <url-pattern>/*</url-pattern>
 
     </filter-mapping>
+
+
 
 
 
