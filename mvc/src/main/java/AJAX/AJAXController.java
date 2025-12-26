@@ -1,9 +1,14 @@
 package AJAX;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.net.URI;
 
 
 //@RestController
@@ -27,6 +32,7 @@ public class AJAXController {
         System.out.println(use);
         return "open post ai";
     }
+
 
 
 

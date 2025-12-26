@@ -7,11 +7,17 @@
     <servlet>
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <!-- AJAX.xml-->
+        <!-- 加载配置文件 -->
+    <!-- 启用File.xml配置 -->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:AJAX.xml</param-value>
+            <param-value>classpath:file.xml</param-value>
         </init-param>
+    <!-- AJAX.xml-->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:AJAX.xml</param-value>-->
+<!--        </init-param>-->
     <!-- RESTFUL.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
