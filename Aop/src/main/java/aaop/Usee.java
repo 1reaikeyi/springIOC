@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 @Configuration
 @ComponentScan(basePackages ={"aaop"})
-@Component("usee")
+@Component
 public class Usee {
     public void save(){
         System.out.println("正在保存---------------");
