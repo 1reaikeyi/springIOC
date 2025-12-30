@@ -5,9 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@EnableTransactionManagement
-@Configuration
-@ComponentScan(basePackages = {"ctransaction"})
 @Component
 public class Account {
     private String name;

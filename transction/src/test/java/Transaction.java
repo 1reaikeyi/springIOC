@@ -14,4 +14,10 @@ public class Transaction {
         DrawMoney drawMoney = context.getBean("drawMoney", DrawMoney.class);
         drawMoney.draw("张三", "李四", 100);
     }
+    @Test
+    public void testAnnotion(){
+        ApplicationContext context = new AnnotationConfigApplicationContext("ctransaction");
+        DrawMoney drawMoney = context.getBean("drawMoney", DrawMoney.class);
+        drawMoney.draw("张三", "李四", 100);
+    }
 }

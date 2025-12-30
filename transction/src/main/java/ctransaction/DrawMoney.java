@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
 @Component
@@ -20,7 +21,7 @@ public class DrawMoney{
     public Account selectById(String accountant) {
         return dao.selectById(accountant);
     }
-    @Transactional
+    @Transactional(rollbackFor = {RuntimeException.class})
     public void draw(String from, String to, double money) {
         Account fromAccount = selectById(from);
         Account toAccount = selectById(to);
@@ -34,8 +35,8 @@ public class DrawMoney{
 
         if(count == 2){
             System.out.println("转账成功");
-            System.out.println(fromAccount+":"+fromAccount.getmoney());
-            System.out.println(toAccount+":"+toAccount.getmoney());
+            System.out.println(fromAccount);
+            System.out.println(toAccount);
         }else{
             System.out.println("转账失败");
             // 业务逻辑失败，抛出RuntimeException触发事务回滚
