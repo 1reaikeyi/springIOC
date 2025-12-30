@@ -9,13 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-
         <module>spring_xml</module>
         <module>Bean_factory</module>
         <module>spring_annotion</module>
         <module>Aop</module>
         <module>wed</module>
-        <module>spring_mybatis</module>
+        <module>transction</module>
     </modules>
 
     <dependencies>

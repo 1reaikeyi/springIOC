@@ -5,7 +5,7 @@
          version="6.0">
 <!--    注册-->
     <servlet>
-        <servlet-name>spring</servlet-name>
+        <servlet-name>web</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 
         <init-param>
@@ -43,10 +43,10 @@
 <!--            <param-name>contextConfigLocation</param-name>-->
 <!--            <param-value>classpath:forward.xml</param-value>-->
 <!--        </init-param>-->
-    <!--yu.xml-->
+    <!--model.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:yu.xml</param-value>-->
+<!--            <param-value>classpath:model.xml</param-value>-->
 <!--        </init-param>-->
     <!--cookie.xml-->
 <!--        <init-param>-->
@@ -62,7 +62,7 @@
     </servlet>
 <!--    请求-->
     <servlet-mapping>
-        <servlet-name>spring</servlet-name>
+        <servlet-name>web</servlet-name>
         <url-pattern>/</url-pattern>
 <!--        <url-pattern>‘/’请求类型</url-pattern>-->
     </servlet-mapping>
