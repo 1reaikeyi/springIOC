@@ -1,10 +1,10 @@
 package a8properties;
 
 public class JDBC {
- private String driver;
- private String url;
- private String user;
- private String password;
+    private String driver;
+    private String url;
+    private String user;
+    private String password;
 
     @Override
     public String toString() {
@@ -31,4 +31,5 @@ public class JDBC {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

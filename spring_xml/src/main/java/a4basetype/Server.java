@@ -2,21 +2,29 @@ package a4basetype;
 
 public class Server {
     private Basetype baseType;
-    private String className;
+    private String name;
 
     public Server() {
+    }
+
+    public Basetype getBaseType() {
+        return baseType;
     }
 
     public void setBaseType(Basetype baseType) {
         this.baseType = baseType;
     }
 
-    public void setClassName(String className) {
-        this.className = className;
+    public String getName() {
+        return name;
     }
-    public void add() {
-        baseType.add();
-        System.out.println("这里是Server类的方法");
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void show() {
+        baseType.show();
         System.out.println(this.toString());
     }
 
@@ -24,7 +32,7 @@ public class Server {
     public String toString() {
         return "Server{" +
                 "baseType=" + baseType +
-                ", className='" + className + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
