@@ -1,5 +1,4 @@
-package a1method;
-
+import a1method.Method;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

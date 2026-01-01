@@ -1,9 +1,8 @@
-package a2set;
-
-
+import a2set.Two;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.testng.annotations.Test;
+
 
 public class Testset {
     @Test
