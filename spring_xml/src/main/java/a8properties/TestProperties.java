@@ -1,5 +1,5 @@
-import a8properties.JDBC;
-import a8properties.SettingProperties;
+package a8properties;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

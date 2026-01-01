@@ -1,9 +1,7 @@
-import cDate.Stu;
+package cDate;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.time.LocalDateTime;
-import java.util.Date;
 
 public class TestDate {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
-import a4basetype.Basetype;
-import a4basetype.Server;
+package a4basetype;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
