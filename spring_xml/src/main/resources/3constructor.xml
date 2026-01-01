@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    1-->
+    <bean id="onebean" class="a3constructor.One"/>
+
+    <bean id="twobean" class="a3constructor.Two">
+        <constructor-arg index="0" ref="onebean"/>
+        <constructor-arg index="1" value="12306"/>
+    </bean>
+    <!--    2-->
+    <bean id="two" class="a3constructor.Two">
+<!--        按照属性名注入，可以不用管顺序-->
+        <constructor-arg name="str" type="java.lang.String" value="12306"/>
+        <constructor-arg name="one" type="a3constructor.One" ref="onebean"/>
+    </bean>
+
+</beans>
