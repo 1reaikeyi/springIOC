@@ -3,9 +3,7 @@ package ajbdc;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
-@Configuration
-@ComponentScan("ajbdc")
-@Component("account")
+@Component
 public class AccountDao {
     private String accountant;
     private int money;

@@ -1,14 +1,14 @@
-import dautowired.One;
-import dautowired.Two;
+import dAutowired.One;
+import dAutowired.Two;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestAutowired {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("dautowired.xml");
-        One one = (One) context.getBean("one");
+        ApplicationContext annotation = new AnnotationConfigApplicationContext("dAutowired");
+        One one = (One) annotation.getBean("one");
         one.save();
-        Two two = (Two) context.getBean("two");
+        Two two = (Two) annotation.getBean("two");
         two.save();
     }
 }

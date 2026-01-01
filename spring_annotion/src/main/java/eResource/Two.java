@@ -1,12 +1,11 @@
-package eResouse;
+package eResource;
 
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan(basePackages = {"eResouse"})
+@ComponentScan(basePackages = {"eResource"})
 //@Component
 //@Resource(name = "one",type = One.class)
 public class Two {

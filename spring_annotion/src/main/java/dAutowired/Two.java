@@ -1,5 +1,4 @@
-package dautowired;
-import dautowired.Impl.DaoImpI2;
+package dAutowired;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

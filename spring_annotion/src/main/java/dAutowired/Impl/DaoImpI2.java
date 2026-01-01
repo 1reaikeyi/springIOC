@@ -1,6 +1,6 @@
-package dautowired.Impl;
+package dAutowired.Impl;
 
-import dautowired.Dao;
+import dAutowired.Dao;
 import org.springframework.stereotype.Component;
 
 @Component("DaoImpl2")
