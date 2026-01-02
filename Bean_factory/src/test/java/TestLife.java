@@ -1,5 +1,4 @@
-package dlife;
-
+import dlife.Lifecycle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

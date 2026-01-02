@@ -1,4 +1,4 @@
-package bbean;
+package bfactory;
 
 import org.springframework.beans.factory.FactoryBean;
 

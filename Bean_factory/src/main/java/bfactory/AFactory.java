@@ -1,4 +1,4 @@
-package bbean;
+package bfactory;
 
 public class AFactory {
     public static A a(){

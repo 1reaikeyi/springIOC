@@ -1,5 +1,4 @@
-package bbean;
-
+import bfactory.A;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,5 +1,5 @@
-package emutualdependency;
-
+import emutualdependency.One;
+import emutualdependency.Two;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

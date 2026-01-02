@@ -1,4 +1,4 @@
-package bbean;
+package bfactory;
 
 public class A {
     public A() {

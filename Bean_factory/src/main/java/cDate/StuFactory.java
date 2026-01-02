@@ -7,6 +7,15 @@ import java.util.Date;
 
 public class StuFactory implements FactoryBean<Date> {
     private String datestr;
+
+    public String getDatestr() {
+        return datestr;
+    }
+
+    public void setDatestr(String datestr) {
+        this.datestr = datestr;
+    }
+
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     public StuFactory(String datestr) {
         this.datestr = datestr;

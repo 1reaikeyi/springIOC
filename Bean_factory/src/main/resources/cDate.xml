@@ -8,12 +8,13 @@
        ">
 <!--    1-->
         <bean id="time" class="cDate.StuFactory">
-            <constructor-arg value="2021-01-01"/>
+            <constructor-arg name="datestr" value="2021-01-01"/>
         </bean>
 <!--    2-->
     <bean id="stu1" class="cDate.Stu" >
         <property name="bir" ref="time"/>
     </bean>
+
     <bean id="stu2" class="cDate.Stu" >
         <property name="bir" value="Fri Oct 10 21:34:43 CST 2025"/>
     </bean>
