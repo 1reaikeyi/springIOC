@@ -1,4 +1,4 @@
-package expection;
+package ExceptionHandler;
 
 import ch.qos.logback.core.model.Model;
 import org.springframework.stereotype.Controller;
