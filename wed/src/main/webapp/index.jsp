@@ -2,10 +2,9 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        <title>Spring MVC 首页</title>
+        <title>Wed</title>
 </head>
 <body>
-<h1>sucessful</h1>
-
+<h1>上号了</h1>
 </body>
 </html>

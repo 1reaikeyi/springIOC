@@ -17,21 +17,21 @@ public class Request {
         request.setAttribute("message", "httpservlrtr_value");
         System.out.println("http"+request.getAttribute("message"));
         System.out.println(request.getClass());
-        return "www";
+        return "ok";
     }
     @RequestMapping("/model")
     public String testservlet(Model model) {
         model.addAttribute("message", "model_value");
         System.out.println("model:"+model.getAttribute("message"));
         System.out.println(model.getClass());
-        return "www";
+        return "ok";
     }
     @RequestMapping("/map")
     public String testservlet(Map<String, Object> map) {
         map.put("message", "map共享数据");
         System.out.println("Map:"+map.get("message"));
         System.out.println(map.getClass());
-        return "www";
+        return "ok";
     }
     @RequestMapping("/modelmap")
     public String testservlet(ModelMap modelMap) {
@@ -39,7 +39,7 @@ public class Request {
         System.out.println("ModelMap:"+modelMap.get("message"));
         System.out.println(modelMap.getClass());
 //        class org.springframework.validation.support.BindingAwareModelMap
-        return "www";
+        return "ok";
     }
     @RequestMapping("/modelAndView")
     public ModelAndView testservlet() {
@@ -48,7 +48,7 @@ public class Request {
         System.out.println("ModelAndView:"+modelAndView.getModel());
         System.out.println(modelAndView.getClass());
 //        class org.springframework.web.servlet.ModelAndView
-        modelAndView.setViewName("www");
+        modelAndView.setViewName("ok");
         return modelAndView;
     }
 }

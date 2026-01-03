@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>请求</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<p>ajaxRequest</p>
+<div id="requestapp">
+    <button @click="postMessage">获取消息</button>
+    <h1>{{message}}</h1>
+</div>
+
+<script>
+    // 修复：使用不同的变量名避免覆盖
+    const requestObject = {"username": "Tom","id": 101};
+    Vue.createApp({
+        data() {
+            return {
+                message: ''
+            }
+        },
+        methods: {
+            async postMessage() {
+                try {
+                    const jsonData = JSON.stringify(requestObject);
+                    const response = await axios.post('/ajaxRequest', jsonData, {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    this.message = response.data;
+                } catch (error) {
+                    console.error('请求失败:', error);
+                    this.message = '请求失败: ' + error.message;
+                }
+            }
+        }
+    }).mount('#requestapp');
+</script>
+
+<p>ajaxResponse</p>
+<div id="responseapp">
+    <button @click="postMessage">获取消息</button>
+    <h1>{{message}}</h1>
+</div>
+
+<script>
+    // 修复：使用不同的变量名避免覆盖
+    const responseObject = {"username": "Jerry","id": 102};
+    Vue.createApp({
+        data() {
+            return {
+                message: ''
+            }
+        },
+        methods: {
+            async postMessage() {
+                try {
+                    const jsonData = JSON.stringify(responseObject);
+                    const response = await axios.post('/ajaxResponse', jsonData, {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    this.message = response.data;
+                } catch (error) {
+                    console.error('请求失败:', error);
+                    this.message = '请求失败: ' + error.message;
+                }
+            }
+        }
+    }).mount('#responseapp');
+</script>
+</body>
+</html>

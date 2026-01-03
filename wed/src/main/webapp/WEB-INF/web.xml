@@ -10,63 +10,30 @@
 
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:intercept.xml</param-value>
-        </init-param>
-    <!-- 启用expection.xml配置 -->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
+<!--        request.xml-->
+<!--        <param-value>classpath:request.xml</param-value>-->
+<!--        model.xml-->
+<!--        <param-value>classpath:model.xml</param-value>-->
+<!--        json.xml-->
+        <param-value>classpath:json.xml</param-value>
+<!--             启用expection.xml配置 -->
 <!--            <param-value>classpath:expection.xml</param-value>-->
-<!--        </init-param>-->
-    <!-- 启用File.xml配置 -->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:file.xml</param-value>-->
-<!--        </init-param>-->
+<!--            <param-value>classpath:intercept.xml</param-value>-->
+        </init-param>
+
         <!-- 文件上传-->
 <!--        <multipart-config>-->
 <!--            <max-file-size>10240</max-file-size>-->
 <!--            <max-request-size>10240</max-request-size>-->
 <!--            <file-size-threshold>0</file-size-threshold>-->
 <!--        </multipart-config>-->
-    <!-- AJAX.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:AJAX.xml</param-value>-->
-<!--        </init-param>-->
-    <!-- RESTFUL.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:REST.xml</param-value>-->
-<!--        </init-param>-->
-    <!--forward.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:forward.xml</param-value>-->
-<!--        </init-param>-->
-    <!--model.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:model.xml</param-value>-->
-<!--        </init-param>-->
-    <!--cookie.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:cookie.xml</param-value>-->
-<!--        </init-param>-->
-    <!--request.xml-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:request.xml</param-value>-->
-<!--        </init-param>-->
-
     </servlet>
-<!--    请求-->
+
     <servlet-mapping>
         <servlet-name>web</servlet-name>
         <url-pattern>/</url-pattern>
-<!--        <url-pattern>‘/’请求类型</url-pattern>-->
     </servlet-mapping>
-<!--    编码，解决post请求-->
+    <!--编码，解决post请求-->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -75,11 +42,11 @@
             <param-value>UTF-8</param-value>
         </init-param>
     </filter>
+
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <!--过滤器-->
     <!-- 启用RESTful风格请求的过滤器 -->
     <filter>
         <filter-name>hiddenHttpMethodFilter</filter-name>
@@ -88,7 +55,6 @@
     <filter-mapping>
         <filter-name>hiddenHttpMethodFilter</filter-name>
         <url-pattern>/*</url-pattern>
-
     </filter-mapping>
 
 
