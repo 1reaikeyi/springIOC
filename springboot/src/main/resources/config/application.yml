@@ -1,0 +1,6 @@
+#spring:
+#  application:
+#    name: springboot
+#  config:
+#    import: [classpath:/config/application-one.yml, classpath:/config/application-two.yml]
+#

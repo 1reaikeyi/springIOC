@@ -4,15 +4,15 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class User {
+public class ValueUser {
     @Value("${name}")
     private String username;
     @Value("${id}")
     private int id;
-    public User() {
-        System.out.println("使用无参构造");
+    public ValueUser() {
+
     }
-    public User(String username, int id) {
+    public ValueUser(String username, int id) {
         this.username = username;
         this.id = id;
         System.out.println("使用有参构造");
