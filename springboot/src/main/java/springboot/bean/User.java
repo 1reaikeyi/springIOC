@@ -1,23 +1,18 @@
-package springboot.controller;
+package springboot.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-//绑定1
-//@Component
-//绑定2
-//@Configuration
-//关联到application.properties
-@ConfigurationProperties(prefix = "prefile")
-public class PrefileUser {
+@Component
+@ConfigurationProperties(prefix = "user")
+public class User {
     private int id;
     private String name;
 
-    public PrefileUser() {
+    public User() {
     }
 
-    public PrefileUser(int id, String name) {
+    public User(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -40,5 +35,13 @@ public class PrefileUser {
     public void introduce() {
         System.out.println("id:"+id);
         System.out.println("name:"+name);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
