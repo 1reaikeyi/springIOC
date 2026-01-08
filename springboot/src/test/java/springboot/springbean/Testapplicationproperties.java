@@ -1,4 +1,4 @@
-package springboot.bean;
+package springboot.springbean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
