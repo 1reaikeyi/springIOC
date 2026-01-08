@@ -1,9 +1,10 @@
-package springboot.bean;
+package springboot.springbean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-@Component
+@Configuration
 @ConfigurationProperties(prefix = "user")
 public class User {
     private int id;

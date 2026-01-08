@@ -1,9 +1,9 @@
-package springboot.bean.pro;
+package springboot.springbean.pro;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class B {
+public class A {
     private String className;
     private String location;
 

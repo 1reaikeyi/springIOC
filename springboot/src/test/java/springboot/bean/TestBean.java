@@ -4,9 +4,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
-import springboot.bean.pro.*;
+import springboot.springbean.Properties;
+import springboot.springbean.pro.Apro;
+import springboot.springbean.pro.Collection;
+import springboot.springbean.pro.Out;
 
-@EnableConfigurationProperties({Collection.class,A.class})
+@EnableConfigurationProperties({Collection.class, Apro.class, Properties.class})
 
 @SpringBootTest
 class TestBean {
@@ -19,17 +22,19 @@ class TestBean {
     }
 
     @Autowired
-    private A a;
+    private Apro apro;
     @Test
     public void test_2() {
-        a.show();
+        apro.show();
     }
 
     @Autowired
-    private C c;
+    private Out c;
     @Test
     public void test_3() {
         System.out.println(c.getName());
         System.out.println(c.getAge());
     }
+
+
 }

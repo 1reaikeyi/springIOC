@@ -2,17 +2,22 @@ package springboot.bean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
+import springboot.springbean.Properties;
+import springboot.springbean.User;
+import springboot.springbean.ValueUser;
+import springboot.springbean.XmlBean;
 
-@EnableConfigurationProperties(User.class)
+@EnableConfigurationProperties({User.class, Properties.class})
 @SpringBootTest
 class Testapplicationproperties {
     @Autowired
     private ValueUser valueUser;
 
     @Test
-    void contextLoads() {
+    void test_1() {
         valueUser.introduce();
     }
 
@@ -20,10 +25,25 @@ class Testapplicationproperties {
     private User user;
 
     @Test
-    void contextLoads_1() {
+    void test_2() {
         user.introduce();
     }
 
+    @Autowired
+    private Properties properties;
+    @Test
+    public void test_4() {
+        System.out.println(properties.getName());
+        System.out.println(properties.getAge());
+    }
+
+    @Autowired
+    @Qualifier("xml")
+    private XmlBean bean;
+    @Test
+    public void test_5() {
+        System.out.println(bean.getName());
+    }
 
 
 }

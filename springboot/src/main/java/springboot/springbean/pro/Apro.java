@@ -1,13 +1,13 @@
-package springboot.bean.pro;
+package springboot.springbean.pro;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 @ConfigurationProperties("address")
-@Component
-public class A {
+@Configuration
+public class Apro {
     private String Building;
-    private B room;
+    private A room;
 
 
     public String getBuilding() {
@@ -18,12 +18,12 @@ public class A {
         Building = building;
     }
 
-    public B getRoom() {
+    public A getRoom() {
         return room;
     }
 
-    public void setRoom(B b) {
-        this.room = b;
+    public void setRoom(A a) {
+        this.room = a;
     }
     public void show() {
         System.out.println(getBuilding());
