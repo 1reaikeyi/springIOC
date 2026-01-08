@@ -14,6 +14,7 @@
         <module>spring_annotion</module>
         <module>Aop</module>
         <module>wed</module>
+        <module>transaction</module>
     </modules>
 
     <dependencies>
