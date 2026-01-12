@@ -1,4 +1,4 @@
-package springboot.springaop;
+package aop;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class Service {
     //切入点表达式
     //    execution(修饰符? 返回值 包名.类名.方法名(参数) throws异常?)
-    @Pointcut("execution(* springboot.springaop.DaoImpl.*(..))")
+    @Pointcut("execution(* aop.DaoImpl.*(..))")
     public void pointcut() {
     }
     @After("pointcut()")

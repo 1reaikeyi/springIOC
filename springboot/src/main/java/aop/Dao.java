@@ -1,4 +1,4 @@
-package springboot.springaop;
+package aop;
 
 public interface Dao {
     void save(String name);

@@ -1,19 +1,17 @@
-package springboot.Aop;
+package bean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import springboot.springaop.Dao;
+import springbean.SomeEnviroment;
 
 @SpringBootTest
-public class Aop {
-
+class Testapplication {
     @Autowired
-    private Dao dao;
+    private SomeEnviroment someEnviroment;
     @Test
-    public void test_1(){
-        dao.save("小明");
-        dao.delete(1);
+    void test_1() {
+        someEnviroment.deSome();
     }
 
 }
