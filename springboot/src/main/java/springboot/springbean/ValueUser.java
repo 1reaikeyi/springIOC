@@ -1,13 +1,14 @@
 package springboot.springbean;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
-
+@PropertySource("classpath:bean.properties")
 @Component
 public class ValueUser {
-    @Value("${name}")
+    @Value("${value.name}")
     private String username;
-    @Value("${id}")
+    @Value("${value.id}")
     private int id;
     public ValueUser() {
 

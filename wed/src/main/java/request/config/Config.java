@@ -17,10 +17,6 @@ public class Config {
     public String redirect(){
         return "forward";
     }
-    @RequestMapping("/document")
-    public String document(){
-        return "document";
-    }
     @RequestMapping("/RESTful")
     public String json(){
         return "RESTful";
