@@ -1,16 +1,14 @@
 package Aop;
 
-import aop.Application;
-import aop.DaoImpl;
+import aop.Dao;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = Application.class)
-
+@SpringBootTest(classes = aop.Application.class)
 public class Aop {
     @Autowired
-    private DaoImpl dao;
+    private Dao dao;
     @Test
     public void test_1(){
         dao.save("小明");

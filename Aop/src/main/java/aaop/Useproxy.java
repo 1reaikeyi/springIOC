@@ -1,6 +1,5 @@
 package aaop;
 
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
@@ -20,13 +19,13 @@ public class Useproxy {
 //    @Around("execution(* eAop.Usee.save(..))")
     @Around("pointcut()")
     public void around(ProceedingJoinPoint pjp) {
-        System.out.println("Around通知保存即将执行");
+        System.out.println("Around即将执行");
         try {
             pjp.proceed();
         } catch (Throwable e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Around通知保存执行完毕");
+        System.out.println("Around执行完毕");
         Signature singnature = (Signature) pjp.getSignature();
         System.out.println("获取方法名： = " + singnature.getName());
 

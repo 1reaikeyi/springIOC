@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import springbean.SomeEnviroment;
 
-@SpringBootTest
+@SpringBootTest(classes = springbean.Application.class)
 class Testapplication {
     @Autowired
     private SomeEnviroment someEnviroment;
