@@ -3,9 +3,8 @@ package bean;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import springbean.SomeEnviroment;
 
-@SpringBootTest(classes = springbean.Application.class)
+@SpringBootTest(classes = bean.Application.class)
 class Testapplication {
     @Autowired
     private SomeEnviroment someEnviroment;

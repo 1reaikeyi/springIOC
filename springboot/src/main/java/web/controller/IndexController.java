@@ -1,4 +1,4 @@
-package springweb.controller;
+package web.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -12,8 +12,10 @@ public class IndexController {
     public String index(){
         return "springboot";
     }
-    @RequestMapping("/chat")
+
+    @RequestMapping("/hi")
     public String chat(){
         return "chat";
     }
+
 }

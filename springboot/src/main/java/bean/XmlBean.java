@@ -1,4 +1,4 @@
-package springbean;
+package bean;
 
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
