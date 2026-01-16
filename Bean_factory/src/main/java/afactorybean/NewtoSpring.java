@@ -1,4 +1,4 @@
-package acreatebean;
+package afactorybean;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 

@@ -1,4 +1,4 @@
-package aaop;
+package aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class Useproxy {
     //切入点表达式
     //    execution(修饰符? 返回值 包名.类名.方法名(参数) throws异常?)
-    @Pointcut("execution(* aaop.Usee.*(..))")
+    @Pointcut("execution(* aop.Usee.*(..))")
     public void pointcut() {
     }
     //环绕通知
