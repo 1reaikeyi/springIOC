@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
-@Component("useproxy")
+@Component
 @Aspect
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class Useproxy {

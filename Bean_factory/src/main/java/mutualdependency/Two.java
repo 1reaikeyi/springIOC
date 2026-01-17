@@ -1,4 +1,4 @@
-package emutualdependency;
+package mutualdependency;
 
 public class Two {
     private String friend;
