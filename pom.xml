@@ -13,7 +13,6 @@
         <module>Bean_factory</module>
         <module>spring_annotion</module>
         <module>proxy</module>
-        <module>wed</module>
         <module>transaction</module>
     </modules>
 
