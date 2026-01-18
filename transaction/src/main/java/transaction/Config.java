@@ -22,7 +22,7 @@ public class Config {
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/tostu");
         dataSource.setUsername("root");
-        dataSource.setPassword("111222");
+        dataSource.setPassword(System.getenv("Mysql_password"));
         return dataSource;
     }
 
