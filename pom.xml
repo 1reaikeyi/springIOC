@@ -10,9 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring_xml</module>
-        <module>Bean_factory</module>
+        <module>spring_factory</module>
         <module>spring_annotion</module>
-        <module>proxy</module>
+        <module>Aop</module>
         <module>transaction</module>
     </modules>
 
