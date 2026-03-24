@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import sercurity.config.UserMapper;
 import sercurity.config.UserPojo;
 
+import java.util.List;
+
 @Service
 public class UserLoginService implements UserDetailsService {
     @Autowired
@@ -24,11 +26,7 @@ public class UserLoginService implements UserDetailsService {
         if (userPojo == null) {
             throw new RuntimeException("User not found");
         }
-        UserDetails userDetails = User.builder()
-                .username(userPojo.getUsername())
-                .password(passwordEncoder.encode(userPojo.getPassword()))
-                .authorities("ROLE_USER")
-                .build();
-        return userDetails;
+        userPojo.setPassword(passwordEncoder.encode(userPojo.getPassword()));
+        return userPojo;
     }
 }
