@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @Controller
 @SessionAttributes(value = {"session_x", "session_y"})
 public class Session {
-//    @RequestMapping("/yu")
-//    public String test() {
-//        return "request";
-//    }
+
     @RequestMapping("/httpsession")
     public String session(HttpSession session) {
         session.setAttribute("session_message", "Hello World");

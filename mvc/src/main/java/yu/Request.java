@@ -11,10 +11,7 @@ import java.util.Map;
 
 @Controller
 public class Request {
-//    @RequestMapping("/yu")
-//    public String test() {
-//        return "request";
-//    }
+
     @RequestMapping("/http")
     public String testservlet(HttpServletRequest request) {
         request.setAttribute("message", "httpservlrtr_value");
