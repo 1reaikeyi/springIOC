@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX请求</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="getapp">
+    <button @click="getMessage">获取get消息</button>
+    <h1>{{message}}</h1>
+</div>
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                message: ''
+            }
+        },
+        methods: {
+            async getMessage() {
+                const response = await axios.get('/ajaxGet');
+                this.message = response.data;
+            }
+        }
+    }).mount('#getapp');
+</script>
+<br>
+
+<div id="postapp">
+    <button @click="postMessage">获取post消息</button>
+    <h1>{{message}}</h1>
+</div>
+<script>
+    // let object = [{"username": "Tom","id": 101},{"username": "Jerry","id": 102}];
+    let object = {"username": "Tom","id": 101};
+    Vue.createApp({
+        data() {
+            return {
+                message: ''
+            }
+        },
+        methods: {
+            async postMessage() {
+                try {
+                    // 将JavaScript对象转换为JSON字符串
+                    const jsonData = JSON.stringify(object);
+                    console.log('发送的JSON数据:', jsonData);
+
+                    // 使用POST请求发送JSON数据
+                    const response = await axios.post('/ajaxPost', jsonData, {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    this.message = response.data;
+                } catch (error) {
+                    console.error('发送失败:', error);
+                    this.message = '发送失败: ' + error.message;
+                }
+            }
+        }
+    }).mount('#postapp');
+
+
+</script>
+
+
+</body>
+</html>

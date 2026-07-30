@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 public class Session {
 
     @RequestMapping("/httpsession")
-    public String session(HttpSession session) {
+    public String session1(HttpSession session) {
         session.setAttribute("session_message", "Hello 你好");
         System.out.println(session.getAttribute("session_message"));
         System.out.println(session.getClass());

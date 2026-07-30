@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 根标签：Spring IoC容器的入口 -->
 <beans>
-    <bean id="userbean" class="bean.User">
+    <bean id="userbean" class="bean.request.config.User">
         <property name="name" value="张三"></property>
         <property name="age" value="18"></property>
     </bean>

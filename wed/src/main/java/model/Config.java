@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Config {
     @RequestMapping("/yu")
     public String test() {
-        return "request";
+        return "model";
     }
 }

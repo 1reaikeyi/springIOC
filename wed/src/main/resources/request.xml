@@ -37,4 +37,11 @@
 <!--        <property name="suffix" value=".jsp"/>-->
 <!--    </bean>-->
 
+<!--    &lt;!&ndash;    xml配置路径&ndash;&gt;-->
+<!--    <mvc:view-controller path="/C" view-name="toC"/>-->
+<!--    &lt;!&ndash;    处理静态资源&ndash;&gt;-->
+<!--    &lt;!&ndash;    1&ndash;&gt;-->
+<!--    &lt;!&ndash;    <mvc:default-servlet-handler/>&ndash;&gt;-->
+<!--    &lt;!&ndash;    2&ndash;&gt;-->
+<!--    <mvc:resources mapping="/static/**" location="/static/"/>-->
 </beans>
