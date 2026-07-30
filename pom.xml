@@ -10,10 +10,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-by-xml</module>
-        <module>spring_factory</module>
+        <module>spring-by-factory</module>
         <module>spring-by-annotion</module>
-        <module>Aop</module>
-        <module>transaction</module>
+        <module>spring-aop</module>
+        <module>spring-transaction</module>
     </modules>
 
     <dependencies>
