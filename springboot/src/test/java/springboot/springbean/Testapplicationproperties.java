@@ -5,10 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
-import springboot.springbean.Properties;
-import springboot.springbean.User;
-import springboot.springbean.ValueUser;
-import springboot.springbean.XmlBean;
+import springboot.springbean.pro.*;
+
 
 @EnableConfigurationProperties({User.class, Properties.class})
 @SpringBootTest
@@ -27,6 +25,13 @@ class Testapplicationproperties {
     @Test
     void test_2() {
         user.introduce();
+    }
+
+    @Autowired
+    private SomeEnviroment someEnviroment;
+    @Test
+    void test_3() {
+        someEnviroment.deSome();
     }
 
     @Autowired
