@@ -1,4 +1,4 @@
-package temp;
+package 全annotion;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan("temp")
+@ComponentScan("全annotion")
 @Component
 public class UserBean {
     @Autowired

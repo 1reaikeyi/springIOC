@@ -9,7 +9,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        ">
-    <bean id="userBean" class="temp.UserBean">
+    <bean id="userBean" class="全annotion.UserBean">
 
     </bean>
 

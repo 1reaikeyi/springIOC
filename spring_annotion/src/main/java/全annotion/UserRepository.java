@@ -1,4 +1,4 @@
-package temp;
+package 全annotion;
 
 import org.springframework.stereotype.Repository;
 
