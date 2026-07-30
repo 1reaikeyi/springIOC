@@ -13,7 +13,7 @@ public class Teacher {
     private List<String> email;
 
     public void introduce() {
-        log.info("教师信息 - 姓名: {}, 职业: {}", name, job);
-        log.info("邮箱列表: {}", email);
+        log.info("教师信息\n"+"姓名: {}, 职业: {}, 邮箱列表: {}", name, job, email);
+
     }
 }
