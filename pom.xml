@@ -12,6 +12,7 @@
         <module>usee_xml</module>
         <module>usee_factory</module>
         <module>usee_anotate</module>
+        <module>use_proxy</module>
     </modules>
     <dependencies>
         <dependency>
