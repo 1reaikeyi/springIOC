@@ -7,7 +7,7 @@
 
     <!-- 此处配置Bean、依赖注入等内容 -->
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <context:component-scan base-package="AJAX"/>
+    <context:component-scan base-package="file"/>
     <mvc:annotation-driven/>
     <!-- Thymeleaf视图解析器配置 -->
     <bean id="thymeleafViewResolver" class="org.thymeleaf.spring6.view.ThymeleafViewResolver">
@@ -20,7 +20,7 @@
             <bean class="org.thymeleaf.spring6.SpringTemplateEngine">
                 <property name="templateResolver">
                     <bean class="org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver">
-                        <property name="prefix" value="classpath:/AJAX/"/>
+                        <property name="prefix" value="classpath:/file/"/>
                         <property name="suffix" value=".html"/>
                         <property name="templateMode" value="HTML"/>
                         <property name="characterEncoding" value="UTF-8"/>
@@ -29,7 +29,6 @@
             </bean>
         </property>
     </bean>
-    <mvc:view-controller path="/post" view-name="post"/>
-    <mvc:view-controller path="/request" view-name="request"/>
+    <mvc:view-controller path="/file" view-name="document"/>
 
 </beans>
