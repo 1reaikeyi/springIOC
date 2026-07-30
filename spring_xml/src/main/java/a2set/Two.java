@@ -1,17 +1,16 @@
 package a2set;
 
 public class Two {
-    private One one;
+    private One oneType;
 
     public void setOne(One one) {
-        this.one = one;
-    }
-    public void setOne1(One one) {
-        this.one = one;
+        this.oneType = one;
     }
     public void two(){
         System.out.println("这里是Two类的方法");
-        one.one();
-
+    }
+    public void use(){
+        oneType.one();
+        two();
     }
 }

@@ -1,9 +1,11 @@
 package cValue;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("singleton")
 public class Stu {
     //先调用无参构造器，再调用set方法，最后调用有参构造器
 //    使用@Value注解给属性赋值，可以不用set方法，但是要在属性上添加@Value注解

@@ -19,10 +19,11 @@ public class Basetype {
     public void setId(int id) {
         this.id = id;
     }
-    public void add(){
+    public void show(){
         System.out.println("这里是Basetype类的方法");
         System.out.println(this.toString());
     }
+
     @Override
     public String toString() {
         return "Basetype{" +
@@ -31,7 +32,7 @@ public class Basetype {
                 ", type='" + type + '\'' +
                 '}';
     }
-    //判断是否是简单类型
+//判断是否是简单类型
 //    public static boolean isSimpleValueType(Class<?> type) {
 //        return Void.class != type && Void.TYPE != type &&
 //        (ClassUtils.isPrimitiveOrWrapper(type) ||

@@ -6,10 +6,10 @@ public class Two {
     public Two(One one, String str) {
         this.one = one;
         this.str = str;
+
     }
-    public void two() {
-        one.one();
-        System.out.println("one = " + one);
-        System.out.println(str);
+    public void show(){
+        System.out.println("this.one = " + this.one);
+        System.out.println("this.str = " + this.str);
     }
 }

@@ -2,14 +2,18 @@ package a5array;
 
 import java.util.Arrays;
 
-public class array {
+public class SettingList {
     private String[] array;
 
-    public array() {
+    public SettingList() {
     }
 
-    public array(String[] array) {
+    public SettingList(String[] array) {
         this.array = array;
+    }
+
+    public String[] getArray() {
+        return array;
     }
 
     public void setArray(String[] array) {
