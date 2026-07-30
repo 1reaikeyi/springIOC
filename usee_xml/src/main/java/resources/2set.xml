@@ -10,7 +10,9 @@
 <!--    </bean>-->
 <!--    2.根据set函数-->
     <bean id="one" class="a2set.One"/>
+<!--    byName-->
     <bean id="twoBean" class="a2set.Two" autowire="byName"/>
+
         <bean id="one" class="a2set.One"/>
         <bean id="twoBean" class="a2set.Two" autowire="byName"/>
 <!--    3-->
