@@ -1,5 +1,4 @@
-package a6arraypro;
-
+import a6arraypro.Arraypro;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

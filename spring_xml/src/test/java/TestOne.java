@@ -1,5 +1,4 @@
-package a9Single;
-
+import a9Single.One;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
