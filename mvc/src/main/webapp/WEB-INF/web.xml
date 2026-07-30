@@ -8,17 +8,22 @@
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!-- 加载配置文件 -->
-    <!-- 启用File.xml配置 -->
+    <!-- 启用expection.xml配置 -->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:file.xml</param-value>
+            <param-value>classpath:expection.xml</param-value>
         </init-param>
+    <!-- 启用File.xml配置 -->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:file.xml</param-value>-->
+<!--        </init-param>-->
         <!-- 文件上传-->
-        <multipart-config>
-            <max-file-size>10240</max-file-size>
-            <max-request-size>10240</max-request-size>
-            <file-size-threshold>0</file-size-threshold>
-        </multipart-config>
+<!--        <multipart-config>-->
+<!--            <max-file-size>10240</max-file-size>-->
+<!--            <max-request-size>10240</max-request-size>-->
+<!--            <file-size-threshold>0</file-size-threshold>-->
+<!--        </multipart-config>-->
     <!-- AJAX.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
