@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class Request {
+    @RequestMapping("/request")
+    public String request() {
+        return "request";
+    }
 //    @RequestMapping(value = "/get",method = {RequestMethod.GET,RequestMethod.POST})
 //    @RequestMapping(value = "/get",method = RequestMethod.GET)
     @GetMapping("/get")

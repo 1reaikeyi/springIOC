@@ -16,19 +16,12 @@
         <property name="order" value="1"/>
         <!-- 配置模板引擎 -->
         <property name="templateEngine">
-            <!-- Spring整合Thymeleaf的模板引擎 -->
             <bean class="org.thymeleaf.spring6.SpringTemplateEngine">
-                <!-- 配置模板解析器 -->
                 <property name="templateResolver">
-                    <!-- Spring资源模板解析器 -->
                     <bean class="org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver">
-                        <!-- 设置模板文件的前缀路径，模板文件存放在classpath下的templates目录 -->
                         <property name="prefix" value="classpath:/request/"/>
-                        <!-- 设置模板文件的后缀名，视图文件使用.html扩展名 -->
                         <property name="suffix" value=".html"/>
-                        <!-- 设置模板模式为HTML -->
                         <property name="templateMode" value="HTML"/>
-                        <!-- 设置模板文件的字符编码为UTF-8 -->
                         <property name="characterEncoding" value="UTF-8"/>
                     </bean>
                 </property>

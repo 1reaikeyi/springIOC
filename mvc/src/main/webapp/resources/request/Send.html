@@ -5,10 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-
 <a href="http://localhost:8080/params?username=admin&password=1">params</a>
+<br>
 <a th:href="@{/params(username='admin',password='1')}">th:params</a>
+<br>
 <a href="http://localhost:8080/header">header</a>
+<br>
 <a th:href="@{/header}">th:header</a>
 </body>
 </html>
