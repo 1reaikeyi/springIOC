@@ -3,13 +3,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 
-
+//@RestController
 @Controller
 public class AJAXController {
 //    @GetMapping("/ajax")
@@ -18,12 +15,19 @@ public class AJAXController {
 //        out.println("welcome to 王者峡谷------------------------");
 //        System.out.println("welcome to 王者峡谷");
 //    }
-    @RequestMapping("/ajax")
+    @RequestMapping(value = "/ajaxGet",method = RequestMethod.GET)
     @ResponseBody
     public String responsebody(){
         System.out.println("welcome---------------王者峡谷");
-        return "welcome 虚拟世界";
+        return "open ai";
     }
+    @RequestMapping(value = "/ajaxPost",method = RequestMethod.POST)
+    @ResponseBody
+    public String ajaxPost(@RequestBody Use use){
+        System.out.println(use);
+        return "open post ai";
+    }
+
 
 
 }
