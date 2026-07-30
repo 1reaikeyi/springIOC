@@ -1,4 +1,4 @@
-package method;
+package a1method;
 
 public class Method {
     public void say(){

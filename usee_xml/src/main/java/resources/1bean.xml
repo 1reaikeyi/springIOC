@@ -4,9 +4,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+    <!--    多例      -->
+    <!--        <bean id = "usee" scope="prototype" class="org.example.Usee"/>-->
+    <!--     单列     -->
+<!--    <bean id = "usee" scope="singleton" class="org.example.Usee"/>-->
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <bean id="methodBean" class="method.Method"></bean>
+    <bean id="methodBean" class="a1method.Method"></bean>
     <bean id="nowTime" class="java.util.Date"/>
 
 </beans>

@@ -1,9 +1,12 @@
-package a1set;
+package a2set;
 
 public class Two {
     private One one;
 
     public void setOne(One one) {
+        this.one = one;
+    }
+    public void setOne1(One one) {
         this.one = one;
     }
     public void two(){

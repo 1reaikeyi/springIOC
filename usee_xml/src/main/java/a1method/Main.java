@@ -1,8 +1,7 @@
-package method;
+package a1method;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import java.util.Date;
 
@@ -10,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
         //classpath: 类路径下
         //                         =  <------先创建对象
-        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("1bean.xml");
         //文件系统路径下
-//        ApplicationContext context = new FileSystemXmlApplicationContext("bean.xml");
+//        ApplicationContext context = new FileSystemXmlApplicationContext("1bean.xml");
         //获取对象
         Object bean = context.getBean("methodBean");
         //获取对象的类型----转换类型

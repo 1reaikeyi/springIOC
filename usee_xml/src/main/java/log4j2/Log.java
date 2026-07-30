@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Log {
     public static void main(String[] args) {
-        new ClassPathXmlApplicationContext("bean.xml");
+        new ClassPathXmlApplicationContext("1bean.xml");
         Logger logger = LoggerFactory.getLogger(Log.class);
     logger.info("这里是一条信息");
     logger.debug("这里是一条调试信息");

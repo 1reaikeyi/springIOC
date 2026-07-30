@@ -2,9 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
-   <bean id="oneBean" class="a1set.One"/>
-   <bean id="twoBean" class="a1set.Two">
-           <property name = "one" ref="oneBean"/>
+<!--    1-->
+
+    <!--   <bean id="oneBean" class="a2set.One"/>-->
+<!--   <bean id="twoBean" class="a2set.Two">-->
+<!--           <property name = "one" ref="oneBean"/>-->
+<!--    </bean>-->
+<!--    2-->
+    <bean id="twoBean" class="a2set.Two">
+        <property name="one">
+            <bean class="a2set.One"/>
+        </property>
     </bean>
 
 
