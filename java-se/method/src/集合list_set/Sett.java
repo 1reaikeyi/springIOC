@@ -10,7 +10,6 @@ public class Sett {
         Set<String> set = new HashSet<>();
         HashSet<String> set1 = new HashSet<>();
         LinkedHashSet<String> set2 = new LinkedHashSet<>();
-        TreeSet<String> set3 = new TreeSet<>();
 
     }
 
