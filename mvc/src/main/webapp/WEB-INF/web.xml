@@ -7,24 +7,21 @@
     <servlet>
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-<!--        指定初始化参数-->
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:yu.xml</param-value>
-        </init-param>
+    <!--        yu.xml-->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:yu.xml</param-value>-->
+<!--        </init-param>-->
+    <!--        cookie.xml-->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
 <!--            <param-value>classpath:cookie.xml</param-value>-->
 <!--        </init-param>-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:request.xml</param-value>-->
-<!--        </init-param>-->
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:templates.xml</param-value>-->
-<!--            <param-value>classpath:request.xml</param-value>-->
-<!--        </init-param>-->
+    <!--        request.xml-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:request.xml</param-value>
+        </init-param>
 
     </servlet>
 <!--    请求-->

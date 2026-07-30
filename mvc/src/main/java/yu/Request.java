@@ -38,6 +38,7 @@ public class Request {
         modelMap.addAttribute("message", "modelmap_value");
         System.out.println("ModelMap:"+modelMap.get("message"));
         System.out.println(modelMap.getClass());
+//        class org.springframework.validation.support.BindingAwareModelMap
         return "www";
     }
     @RequestMapping("/modelAndView")
@@ -46,6 +47,7 @@ public class Request {
         modelAndView.addObject("message", "modelandview_value");
         System.out.println("ModelAndView:"+modelAndView.getModel());
         System.out.println(modelAndView.getClass());
+//        class org.springframework.web.servlet.ModelAndView
         modelAndView.setViewName("www");
         return modelAndView;
     }
