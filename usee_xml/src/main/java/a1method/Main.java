@@ -12,9 +12,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("1bean.xml");
         //文件系统路径下
 //        ApplicationContext context = new FileSystemXmlApplicationContext("1bean.xml");
-        //获取对象
-        Object bean = context.getBean("methodBean");
-        //获取对象的类型----转换类型
         Method a = context.getBean("methodBean",Method.class);
         a.say();
         System.out.println("method = " + a);
