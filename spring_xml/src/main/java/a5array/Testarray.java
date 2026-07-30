@@ -1,4 +1,5 @@
-import a5array.SettingList;
+package a5array;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,7 +1,9 @@
-import a3constructor.Two;
-import org.junit.Test;
+package a3constructor;
+
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testng.annotations.Test;
 
 public class Testconstructor {
     @Test
