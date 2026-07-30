@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>annotion</artifactId>
+    <artifactId>spring_annotion</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

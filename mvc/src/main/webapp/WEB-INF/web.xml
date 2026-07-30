@@ -7,12 +7,16 @@
     <servlet>
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!-- 加载配置文件 -->
-    <!-- 启用expection.xml配置 -->
+
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:expection.xml</param-value>
+            <param-value>classpath:intercept.xml</param-value>
         </init-param>
+    <!-- 启用expection.xml配置 -->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:expection.xml</param-value>-->
+<!--        </init-param>-->
     <!-- 启用File.xml配置 -->
 <!--        <init-param>-->
 <!--            <param-name>contextConfigLocation</param-name>-->
