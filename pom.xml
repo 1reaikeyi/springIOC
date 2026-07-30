@@ -9,13 +9,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>usee_xml</module>
-        <module>usee_factory</module>
-        <module>usee_anotate</module>
-        <module>use_proxy</module>
-        <module>use_AOP</module>
+        <module>xml</module>
+        <module>factory</module>
+        <module>annotion</module>
+        <module>Proxy</module>
+        <module>Aop</module>
         <module>usee_Mybatis</module>
-        <module>usee_MVC</module>
+        <module>mvc</module>
 
     </modules>
     <dependencies>
@@ -24,11 +24,6 @@
             <artifactId>spring-context</artifactId>
             <version>6.0.13</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-api</artifactId>-->
-<!--            <version>2.20.0</version> &lt;!&ndash; 使用最新稳定版本 &ndash;&gt;-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>

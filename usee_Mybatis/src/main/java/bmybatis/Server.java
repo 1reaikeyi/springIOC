@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("server")
 public class Server {
     @Autowired
-    private DaoImpl dao;
+    private Dao dao;
 
     public int insert(Account account) {
         return dao.insert(account);
@@ -30,11 +30,37 @@ public class Server {
         return dao.selectAll();
     }
     public void withdraw(String from, String to, int money) {
-        Account a = dao.selectById(from);
-        Account d = dao.selectById(to);
-        a.setmoney(a.getmoney() - money);
-        d.setmoney(d.getmoney() + money);
-        int i = dao.update(a);
-        int j = dao.update(d);
+        // 2. 查询转出和转入账户
+        Account fromAccount = dao.selectById(from);
+        Account toAccount = dao.selectById(to);
+
+        // 3. 校验账户是否存在
+        if (fromAccount == null) {
+            throw new RuntimeException("转出账户不存在: " + from);
+        }
+        if (toAccount == null) {
+            throw new RuntimeException("转入账户不存在: " + to);
+        }
+
+        // 4. 校验转出账户余额是否充足
+        if (fromAccount.getmoney() < money) {
+            throw new RuntimeException("转出账户余额不足，当前余额: " + fromAccount.getmoney() + ", 需转账: " + money);
+        }
+
+        // 5. 执行转账逻辑
+        fromAccount.setmoney(fromAccount.getmoney() - money);
+        toAccount.setmoney(toAccount.getmoney() + money);
+
+        // 6. 执行更新并校验结果
+        int updateFrom = dao.update(fromAccount);
+        int updateTo = dao.update(toAccount);
+
+        if (updateFrom != 1) {
+            throw new RuntimeException("转出账户更新失败");
+        }
+        if (updateTo != 1) {
+            throw new RuntimeException("转入账户更新失败");
+        }
     }
 }
+
