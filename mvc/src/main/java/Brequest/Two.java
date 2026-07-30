@@ -1,0 +1,13 @@
+package Brequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/product")
+public class Two {
+    @RequestMapping("/two")
+    public String two() {
+        return "Two";
+    }
+}

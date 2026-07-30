@@ -9,6 +9,9 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        ">
+    <bean id="userBean" class="temp.UserBean">
+
+    </bean>
 
     <!-- 此处配置Bean、依赖注入等内容 -->
 <!--    多个包扫描用逗号隔开，也可以用分号隔开-->
