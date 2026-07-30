@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="http://localhost:8080/params?username=admin&password=1">params</a>
+<a th:href="@{/params(username='admin',password='1')}">th:params</a>
+<a href="http://localhost:8080/header">header</a>
+<a th:href="@{/headder(Referer='a',host='b')}">th:header</a>
+</body>
+</html>
