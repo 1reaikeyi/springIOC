@@ -1,4 +1,4 @@
-package afacrory;
+package acreatebean;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 

@@ -1,4 +1,4 @@
-package afacrory;
+package acreatebean;
 
 public class Stu {
     private int id;
