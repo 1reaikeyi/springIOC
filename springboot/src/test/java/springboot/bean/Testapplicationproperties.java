@@ -1,15 +1,13 @@
-package springboot;
+package springboot.bean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
-import springboot.bean.User;
-import springboot.bean.ValueUser;
 
 @EnableConfigurationProperties(User.class)
 @SpringBootTest
-class SpringbootApplicationTests {
+class Testapplicationproperties {
     @Autowired
     private ValueUser valueUser;
 
