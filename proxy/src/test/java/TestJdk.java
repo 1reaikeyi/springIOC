@@ -1,5 +1,5 @@
-package proxy;
-
+import proxy.JDKProxy;
+import proxy.OrderInterface;
 
 public class TestJdk {
     public static void main(String[] args) throws Exception {
@@ -15,6 +15,11 @@ public class TestJdk {
 class Order implements OrderInterface {
     @Override
     public void save() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("保存ing-------------");
     }
 

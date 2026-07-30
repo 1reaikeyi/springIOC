@@ -1,4 +1,4 @@
-package acreatebean;
+package afactorybean;
 
 public class Stu {
     private int id;

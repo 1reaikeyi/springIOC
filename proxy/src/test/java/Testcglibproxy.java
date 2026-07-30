@@ -1,5 +1,5 @@
-package proxy;
-
+import proxy.CGLIBProxy;
+import proxy.OrderClass;
 
 public class Testcglibproxy {
     public static void main(String[] args) {
