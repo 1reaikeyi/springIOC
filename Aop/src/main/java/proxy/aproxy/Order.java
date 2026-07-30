@@ -10,6 +10,7 @@ public class Order implements Person {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         System.out.println("保存订单------");
 
     }
