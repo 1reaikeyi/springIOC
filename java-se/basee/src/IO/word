@@ -1,0 +1,13 @@
+
+一、字节流（处理二进制文件：图片、视频、音频、文件拷贝）
+FileInputStream / FileOutputStream（文件字节节点流）
+--下面的流都可以套在FileInputStream / FileOutputStream 上
+BufferedInputStream / BufferedOutputStream（缓冲流，提升效率，必套）
+DataInputStream / DataOutputStream（读写 int/long/double 等基本类型）
+ObjectInputStream / ObjectOutputStream（对象序列化 / 反序列化）
+二、字符流（处理文本文件：.txt、.java、.properties）
+FileReader / FileWriter（文件字符节点流）
+--下面的流都可以套在FileReader / FileWriter 上
+BufferedReader / BufferedWriter（缓冲字符流，支持readLine()按行读）
+--把字节流套上字符流，解决编码问题
+InputStreamReader / OutputStreamWriter（字节↔字符转换流，解决编码问题）
