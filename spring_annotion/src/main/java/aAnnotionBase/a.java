@@ -1,4 +1,4 @@
-package aannotion;
+package aAnnotionBase;
 @Tar(name = "孙子兵法")
 public class a {
     public static void main(String[] args) {

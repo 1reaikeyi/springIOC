@@ -1,4 +1,4 @@
-package eResouse;
+package eResource;
 
 import org.springframework.stereotype.Component;
 

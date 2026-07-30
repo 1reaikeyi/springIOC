@@ -9,13 +9,10 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        ">
-    <bean id="userBean" class="全annotion.UserBean">
-
-    </bean>
 
     <!-- 此处配置Bean、依赖注入等内容 -->
 <!--    多个包扫描用逗号隔开，也可以用分号隔开-->
     <context:component-scan base-package="bbean" use-default-filters="false">
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
     </context:component-scan>
 </beans>

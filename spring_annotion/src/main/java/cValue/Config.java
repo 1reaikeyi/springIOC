@@ -1,9 +1,9 @@
-package eResouse;
+package cValue;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-
-public interface Resouse {
-    void save();
+@Configuration
+@ComponentScan("cValue")
+public class Config {
 }
