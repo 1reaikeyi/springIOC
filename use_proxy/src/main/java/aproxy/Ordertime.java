@@ -1,6 +1,8 @@
 package aproxy;
 
-public class Ordertime implements Person{
+import bJDKproxy.Person;
+
+public class Ordertime implements Person {
     private Person order;
     public Ordertime() {
     }
