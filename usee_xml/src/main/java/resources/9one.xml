@@ -6,7 +6,6 @@
        http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd
        ">
-
     <!-- 此处配置Bean、依赖注入等内容 -->
 <!--    <bean id="onebean" scope="singleton" class="a9one.One"/>-->
     <bean id="onebean" scope="prototype" class="a9one.One"/>

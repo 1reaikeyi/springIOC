@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestP_C {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("7spring_p_c.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("7spring_p_c_util.xml");
         Usee usee = (Usee) context.getBean("usee1");
         System.out.println(usee);
         Usee usee2 = (Usee) context.getBean("usee2");

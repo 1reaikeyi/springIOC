@@ -14,8 +14,6 @@
       <value>002</value>
       <value>003</value>
   </util:list>
-
-    <!-- 注入数组到Server对象 -->
     <bean id="server1" class="a7spring_p_c_util.Server" p:order-ref="list" />
     <bean id="server2" class="a7spring_p_c_util.Server" p:order-ref="list"/>
 </beans>
