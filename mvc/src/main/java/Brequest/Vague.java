@@ -1,6 +1,7 @@
 package Brequest;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -16,8 +17,17 @@ public class Vague {
 //        return "One";
 //    }
     //    /x**z 不匹配：路径不以 /,? 开头；
-    @RequestMapping("/**x")
-    public String vague3() {
+//    @RequestMapping("/**x")
+//    public String vague3() {
+//        return "One";
+//    }
+    @RequestMapping("/{username}/{password}")
+    public String login(@PathVariable
+                            String username,
+                        @PathVariable
+                        String password) {
+        System.out.println("用户名：" + username+"\t密码："+password);
         return "One";
+
     }
 }
