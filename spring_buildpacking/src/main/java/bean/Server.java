@@ -1,14 +1,13 @@
 package bean;
 
 public class Server {
-    private Dao userDao;
+    private UserDao userDao;
 
-
-    public void setDao(Dao dao) {
-        this.userDao = dao;
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
     }
 
-    public void save(){
+    public void insert(){
         userDao.insert();
     }
 }

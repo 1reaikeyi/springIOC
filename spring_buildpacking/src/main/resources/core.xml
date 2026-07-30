@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 根标签：Spring IoC容器的入口 -->
 <beans>
-    <bean id="userbean" class="bean.request.config.User">
-        <property name="name" value="张三"></property>
-        <property name="age" value="18"></property>
+    <bean id="userBean" class="bean.User">
+        <property name="username" value="张三"></property>
+        <property name="id" value="18"></property>
     </bean>
-    <bean id="dao" class="bean.UserDao"/>
-    <bean id="service" class="bean.UserService">
-        <property name="userDao" ref="dao"></property>
+
+    <bean id="userDao" class="bean.UserDao"/>
+
+    <bean id="service" class="bean.Server">
+        <property name="userDao" ref="userDao"></property>
     </bean>
 
 </beans>
