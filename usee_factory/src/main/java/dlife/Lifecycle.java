@@ -46,7 +46,18 @@ public class Lifecycle implements BeanNameAware, BeanFactoryAware, InitializingB
         System.out.println("DisposableBean`s:destroy");
     }
 
-
+//    第一步：使用无参构造
+//    第二步：赋值
+//    Aware:setBeanName
+//    Aware:setBeanFactory
+//            postProcessBeforeInitialization调用初始化方法
+//    InitializingBean`s:afterPropertiesSet
+//    第三步：初始化
+//            调用初始化方法postProcessAfterInitialization
+//    第四部dlife.Lifecycle@554e218
+//    lifecycle-id: = 1
+//    DisposableBean`s:destroy
+//    第五步：摧毁bean
 
 
 }
