@@ -41,11 +41,11 @@
             <version>3.1.2.RELEASE</version>
         </dependency>
         <!-- 流程日志-->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.5.18</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>ch.qos.logback</groupId>-->
+<!--            <artifactId>logback-classic</artifactId>-->
+<!--            <version>1.5.18</version>-->
+<!--        </dependency>-->
 <!--        解析json-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

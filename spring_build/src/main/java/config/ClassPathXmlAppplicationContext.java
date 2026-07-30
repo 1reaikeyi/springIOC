@@ -1,4 +1,4 @@
-package core;
+package config;
 
 import ch.qos.logback.classic.Logger;
 import org.dom4j.Document;
@@ -41,7 +41,7 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
                 logger.info("id = " + id);
                 String className = element.attributeValue("class");
                 logger.info("className = " + className);
-                //反射创建对象
+                //通过反射获取对象
                 Class<?> aClass = Class.forName(className);
                 //获取构造器,创建对象
                 Constructor<?> constructor = aClass.getDeclaredConstructor();
@@ -88,9 +88,8 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
                     }
 
                     if (propertyValue != null) {
-                        // 将字符串值转换为字段的实际类型
-                        Object convertedValue = typeValue(propertyValue, fieldType);
-                        setter.invoke(targetObject, convertedValue);
+                        Object typeValue = typeValue(propertyValue, fieldType);
+                        setter.invoke(targetObject, typeValue);
                         logger.info("成功注入值: " + propertyValue + " 到 " + className + "\t" + propertyName);
                     }
                 }

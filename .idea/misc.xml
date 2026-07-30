@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/spring_buildpacking/pom.xml" />
         <option value="$PROJECT_DIR$/mvc/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_build/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_security/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
