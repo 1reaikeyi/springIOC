@@ -15,6 +15,8 @@
         <module>use_proxy</module>
         <module>use_AOP</module>
         <module>usee_Mybatis</module>
+        <module>usee_MVC</module>
+
     </modules>
     <dependencies>
         <dependency>
@@ -37,6 +39,7 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.19.0</version>
         </dependency>
+
     </dependencies>
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
