@@ -1,10 +1,10 @@
-package proxy.bJDKproxy;
+package proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class NewProxy {
+public class JDKProxy {
     public static Object newProxyInstance(Object target){
         return  Proxy.newProxyInstance(
                 target.getClass().getClassLoader(),

@@ -1,12 +1,14 @@
-package proxy.dCGLIBproxy;
+package proxy;
 
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+
+
+import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
-public class NewProxy {
+public class CGLIBProxy {
     public static Object setCallback(Object target) {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(target.getClass());
@@ -18,8 +20,8 @@ public class NewProxy {
             // 调用目标方法
             Object result = methodProxy.invokeSuper(o, objects);
             long end = System.currentTimeMillis();
-                System.out.println("耗时：" + (end - start) + "ms");
-                return result;
+            System.out.println("耗时：" + (end - start) + "ms");
+            return result;
         }
     });
         return enhancer.create();
