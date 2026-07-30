@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import springbean.*;
 
 @EnableConfigurationProperties({Collection.class, Apro.class})
-@SpringBootTest(classes = Application.class)
+@SpringBootTest(classes = springbean.Application.class)
 class TestBean {
     @Autowired
     @Qualifier("xml")
