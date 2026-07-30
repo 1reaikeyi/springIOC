@@ -1,4 +1,4 @@
-package a1factory;
+package afactory;
 
 public class TankFactory extends Factory{
     @Override
