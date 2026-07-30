@@ -1,6 +1,6 @@
-package springboot.bean.pro;
+package springboot.springbean.pro;
 
-public class C {
+public class Out {
     private String name;
     public int age;
 

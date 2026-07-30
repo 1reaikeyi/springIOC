@@ -1,14 +1,14 @@
-package springboot.bean.pro;
+package springboot.springbean.pro;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
-import springboot.bean.User;
+import org.springframework.context.annotation.Configuration;
+import springboot.springbean.User;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-@Component
+@Configuration
 @ConfigurationProperties("collection")
 public class Collection {
     private String[] names;
