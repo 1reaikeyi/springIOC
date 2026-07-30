@@ -1,11 +1,11 @@
-package Brequest;
+package request;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/user")
-public class One {
+public class Onemapping {
     @RequestMapping("/one")
     public String one() {
         return "One";

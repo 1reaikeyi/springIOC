@@ -1,4 +1,4 @@
-package fnewto;
+package afacrory;
 
 public class Stu {
     private int id;
