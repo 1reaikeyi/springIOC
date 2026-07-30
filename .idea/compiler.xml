@@ -11,13 +11,13 @@
         <module name="spring-transaction" />
         <module name="spring-rebuild-ioc" />
         <module name="spring-mvc" />
-        <module name="spring-by-annotion" />
-        <module name="spring-by-factory" />
+        <module name="spring-ioc-by-annotion" />
+        <module name="spring-ioc-by-factory" />
+        <module name="spring-ioc-by-xml" />
         <module name="spring-security" />
+        <module name="spring-boot" />
         <module name="spring-aop" />
         <module name="spring-rebuild-web" />
-        <module name="springboot" />
-        <module name="spring-by-xml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,9 +28,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-by-xml" options="" />
+      <module name="spring-boot" options="-parameters" />
+      <module name="spring-ioc-by-xml" options="" />
       <module name="spring-security" options="-parameters" />
-      <module name="springboot" options="-parameters" />
     </option>
   </component>
 </project>

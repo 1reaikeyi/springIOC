@@ -9,9 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-by-xml</module>
-        <module>spring-by-factory</module>
-        <module>spring-by-annotion</module>
+        <module>spring-ioc-by-xml</module>
+        <module>spring-ioc-by-factory</module>
+        <module>spring-ioc-by-annotion</module>
         <module>spring-aop</module>
         <module>spring-transaction</module>
     </modules>

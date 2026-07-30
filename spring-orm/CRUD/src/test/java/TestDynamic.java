@@ -1,0 +1,51 @@
+import dynamic.Dao;
+import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
+import resource.SqlSessionFactotyBuilderUtil;
+import resource.Usee;
+
+import java.util.List;
+
+public class TestDynamic {
+    @Test
+    public void test_1() {
+        SqlSession sqlSession = SqlSessionFactotyBuilderUtil.getSqlSession();
+        Dao mapper = sqlSession.getMapper(Dao.class);
+        List<Usee> usees1 = mapper.selectIf("唐僧", Double.valueOf("6000.0"),"大唐");
+        List<Usee> usees2 = mapper.selectIf("唐僧", Double.valueOf("6000.0"),"");
+        List<Usee> usees3 = mapper.selectIf("唐僧", null,"");
+        List<Usee> usees4 = mapper.selectIf("", null,"");
+        System.out.println("usees1 = " + usees1);
+        System.out.println("usees2 = " + usees2);
+        System.out.println("usees3 = " + usees3);
+        System.out.println("usees4 = " + usees4);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+    @Test
+    public void test_2() {
+        SqlSession sqlSession = SqlSessionFactotyBuilderUtil.getSqlSession();
+        Dao mapper = sqlSession.getMapper(Dao.class);
+        List<Usee> usees1 = mapper.selectTrim("唐僧", Double.valueOf("6000.0"),"大唐");
+        List<Usee> usees2 = mapper.selectTrim("唐僧", Double.valueOf("6000.0"),"");
+        List<Usee> usees3 = mapper.selectTrim("唐僧", null,"");
+        List<Usee> usees4 = mapper.selectTrim("", null,"");
+        System.out.println("usees1 = " + usees1);
+        System.out.println("usees2 = " + usees2);
+        System.out.println("usees3 = " + usees3);
+        System.out.println("usees4 = " + usees4);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+    @Test
+    public void test_3() {
+        SqlSession sqlSession = SqlSessionFactotyBuilderUtil.getSqlSession();
+        Dao mapper = sqlSession.getMapper(Dao.class);
+//        config.Usee{name='沙僧', id=3, workplace='池塘', salary=3000.0, job='打杂', gender='zoo'}
+        int i = mapper.updateSet("沙僧",Double.valueOf("6000.0"),"湖北");
+        System.out.println(i);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapperment 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CRUD.Dao">
+
+    <insert id="insert">
+        insert into shuihu (name,id,workplace,salary,gender,job)
+        values (#{name},#{id},#{workplace},#{salary},#{gender},#{job});
+    </insert>
+
+    <delete id="delete">
+        delete from shuihu where id = #{id};
+    </delete>
+
+    <update id="update">
+        update shuihu set job = #{job} where id = #{id};
+    </update>
+
+    <select id="selectOne" resultType="resource.Usee">
+        select * from shuihu where id = #{id};
+    </select>
+    <select id="selectAll" resultType="resource.Usee">
+        select * from shuihu;
+    </select>
+
+
+</mapper>
