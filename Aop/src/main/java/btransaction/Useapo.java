@@ -10,13 +10,12 @@ import org.springframework.stereotype.Component;
 @Aspect
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class Useapo {
+    //    execution(修饰符? 返回值 包名.类名.方法名(参数) throws异常?)
     @Around("execution (* btransaction.Usee.*(..)) ")
     public void around(ProceedingJoinPoint pjp){
         System.out.println("开启事务");
         try {
-
             pjp.proceed();
-
         } catch (Throwable e) {
             throw new RuntimeException(String.format("事务回滚,异常信息为:%s",e.getMessage()));
         }

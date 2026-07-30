@@ -12,7 +12,8 @@ import org.springframework.stereotype.Component;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class Useproxy {
     //切入点表达式
-    @Pointcut("execution(* aaop.Usee.save(..))")
+    //    execution(修饰符? 返回值 包名.类名.方法名(参数) throws异常?)
+    @Pointcut("execution(* aaop.Usee.*(..))")
     public void pointcut() {
     }
     //环绕通知
@@ -20,14 +21,12 @@ public class Useproxy {
     @Around("pointcut()")
     public void around(ProceedingJoinPoint pjp) {
         System.out.println("Around通知保存即将执行");
-        System.out.println();
         try {
             pjp.proceed();
         } catch (Throwable e) {
             throw new RuntimeException(e);
         }
         System.out.println("Around通知保存执行完毕");
-        System.out.println();
         Signature singnature = (Signature) pjp.getSignature();
         System.out.println("获取方法名： = " + singnature.getName());
 
@@ -38,21 +37,18 @@ public class Useproxy {
     @Before("pointcut()")
     public void before() {
         System.out.println("Before通知保存即将执行");
-        System.out.println();
     }
     //后置通知
 //    @After("execution(* eAop.Usee.save(..))")
     @After("pointcut()")
     public void after1() {
         System.out.println("After通知保存即将执行");
-        System.out.println();
     }
     //后置返回通知通知
 //    @AfterReturning("execution(* eAop.Usee.save(..))")
     @AfterReturning("pointcut()")
     public void after(){
         System.out.println("AfterReturning通知保存执行完毕");
-        System.out.println();
     }
 
     //异常通知
@@ -60,7 +56,6 @@ public class Useproxy {
     @AfterThrowing("pointcut()")
     public void afterThrowing() {
         System.out.println("AfterThrowing通知保存异常");
-        System.out.println();
     }
 }
 /**

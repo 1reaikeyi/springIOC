@@ -7,6 +7,7 @@ public class Testaop {
         ApplicationContext ac = new AnnotationConfigApplicationContext("aaop");
         Usee usee1 = ac.getBean("usee",Usee.class);
         usee1.save();
+        usee1.exit();
 
     }
 }
