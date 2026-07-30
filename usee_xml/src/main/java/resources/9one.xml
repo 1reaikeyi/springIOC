@@ -6,7 +6,22 @@
        http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd
        ">
+
     <!-- 此处配置Bean、依赖注入等内容 -->
+<!--    1-->
 <!--    <bean id="onebean" scope="singleton" class="a9one.One"/>-->
-    <bean id="onebean" scope="prototype" class="a9one.One"/>
+<!--    2-->
+<!--    <bean id="onebean" scope="prototype" class="a9one.One"/>-->
+<!--    3-->
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+            <map>
+                <!-- 键：作用域名称，值：作用域实现类 -->
+                <entry key="thread" value-ref="threadScope"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="threadScope" class="org.springframework.context.support.SimpleThreadScope"/>
+
+    <bean id="onebean" scope="thread" class="a9one.One"/>
 </beans>
