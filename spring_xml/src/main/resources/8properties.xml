@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 根标签：Spring IoC容器的入口 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 连接型properties文件加载方式 -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="jdbc" class="a8properties.JDBC">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="user" value="${username}"/>
+        <property name="password" value="${password}"/>
+    </bean>
+
+<!--    properties加载方式-->
+    <bean id="properties" class="a8properties.SettingProperties">
+        <property name="properties">
+            <props>
+                <prop key="driver">first</prop>
+                <prop key="url">first</prop>
+                <prop key="user">first</prop>
+                <prop key="password">first</prop>
+            </props>
+
+        </property>
+    </bean>
+</beans>
