@@ -1,5 +1,5 @@
 <!--    处理静态资源-->
 <!--    1-->
-<!--    <mvc:default-servlet-handler/>-->
+    <mvc:default-servlet-handler/>
 <!--    2-->
     <mvc:resources mapping="/static/**" location="/static/"/>
