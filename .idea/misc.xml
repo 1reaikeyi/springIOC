@@ -16,6 +16,10 @@
         <option value="$PROJECT_DIR$/spring_build/pom.xml" />
         <option value="$PROJECT_DIR$/security/pom.xml" />
         <option value="$PROJECT_DIR$/spring_security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-build/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-by-reBuild/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

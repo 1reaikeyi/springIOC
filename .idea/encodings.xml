@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/Aop/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-aop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-by-annotion/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-by-annotion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-by-factory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-by-factory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-by-reBuild/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-by-reBuild/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-by-xml/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-by-xml/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_build/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_build/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_factory/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_factory/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring_security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springmvc/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springmvc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/transaction/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/transaction/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

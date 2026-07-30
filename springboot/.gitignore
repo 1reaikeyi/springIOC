@@ -1,10 +1,14 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# 文档&编译包
 
-### STS ###
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+
+# 全局忽略所有 target 目录（最简洁有效，删掉多余反向排除）
+
+**/target/
+
+# STS 开发工具配置
+
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +17,8 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# NetBeans 开发工具配置
 
-### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +28,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code 开发工具配置
+
 .vscode/
