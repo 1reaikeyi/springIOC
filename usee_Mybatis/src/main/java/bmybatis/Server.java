@@ -42,11 +42,6 @@ public class Server {
             throw new RuntimeException("转入账户不存在: " + to);
         }
 
-        // 4. 校验转出账户余额是否充足
-        if (fromAccount.getmoney() < money) {
-            throw new RuntimeException("转出账户余额不足，当前余额: " + fromAccount.getmoney() + ", 需转账: " + money);
-        }
-
         // 5. 执行转账逻辑
         fromAccount.setmoney(fromAccount.getmoney() - money);
         toAccount.setmoney(toAccount.getmoney() + money);

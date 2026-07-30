@@ -15,6 +15,14 @@ public class Account {
         this.money = money;
     }
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountant='" + accountant + '\'' +
+                ", money=" + money +
+                '}';
+    }
+
     public String getAccountant() {
         return accountant;
     }
