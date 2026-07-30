@@ -1,12 +1,10 @@
-package eAop;
+package aaop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component("useproxy")
@@ -14,7 +12,7 @@ import org.springframework.stereotype.Component;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class Useproxy {
     //切入点表达式
-    @Pointcut("execution(* eAop.Usee.save(..))")
+    @Pointcut("execution(* aaop.Usee.save(..))")
     public void pointcut() {
     }
     //环绕通知
@@ -51,7 +49,7 @@ public class Useproxy {
     }
     //后置返回通知通知
 //    @AfterReturning("execution(* eAop.Usee.save(..))")
-    @AfterReturning(" pointcut()")
+    @AfterReturning("pointcut()")
     public void after(){
         System.out.println("AfterReturning通知保存执行完毕");
         System.out.println();
