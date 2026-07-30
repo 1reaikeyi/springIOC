@@ -15,8 +15,10 @@ class Testapplicationproperties {
     void contextLoads() {
         valueUser.introduce();
     }
+
     @Autowired
     private User user;
+
     @Test
     void contextLoads_1() {
         user.introduce();
