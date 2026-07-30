@@ -35,10 +35,10 @@ public class PequestParam {
     //使用PoJo对象获取请求参数
     @RequestMapping("/post")
     public String post(Register register) {
-        System.out.println("/post");
         System.out.println(register);
         return "www";
     }
+
     @RequestMapping("/header")
     public String referer(@RequestHeader(value = "Referer",required = false) String referer,
                         @RequestHeader("host") String host){

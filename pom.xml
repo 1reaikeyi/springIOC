@@ -13,7 +13,6 @@
         <module>xml</module>
         <module>beanlife</module>
         <module>annotion</module>
-        <module>Proxy</module>
         <module>Aop</module>
         <module>mvc</module>
         <module>spring_mybatis</module>

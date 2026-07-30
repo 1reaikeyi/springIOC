@@ -1,4 +1,4 @@
-package dCGLIBproxy;
+package proxy.cCGLIB;
 
 public class Order {
     public boolean save(){
@@ -8,5 +8,4 @@ public class Order {
     public void select(){
         System.out.println("查询ing-------------");
     }
-
 }
