@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX请求</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <button @click="getMessage">获取消息</button>
+    <h1>{{message}}</h1>
+</div>
+
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                message: ''
+            }
+        },
+        methods: {
+            async getMessage() {
+                const response = await axios.get('/ajax');
+                this.message = response.data;
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>
