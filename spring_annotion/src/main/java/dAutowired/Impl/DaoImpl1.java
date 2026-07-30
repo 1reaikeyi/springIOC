@@ -3,7 +3,7 @@ package dAutowired.Impl;
 import dAutowired.Dao;
 import org.springframework.stereotype.Component;
 
-@Component("DaoImpl1")
+@Component
 public class DaoImpl1 implements Dao {
     @Override
     public void save() {

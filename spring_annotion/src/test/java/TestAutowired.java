@@ -7,7 +7,7 @@ public class TestAutowired {
     public static void main(String[] args) {
         ApplicationContext annotation = new AnnotationConfigApplicationContext("dAutowired");
         One one = (One) annotation.getBean("one");
-        one.save();
+        one.test();
         Two two = (Two) annotation.getBean("two");
         two.save();
     }

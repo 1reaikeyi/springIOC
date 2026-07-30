@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class Two {
     @Autowired
-    @Qualifier("DaoImpl2")
-    private Dao dao1;
+    @Qualifier("daoImpI2")
+    private Dao dao;
     public void save() {
-        dao1.save();
+        dao.save();
         System.out.println("--------------------");
     }
 }
