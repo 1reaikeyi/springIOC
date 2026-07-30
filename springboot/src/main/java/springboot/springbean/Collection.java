@@ -1,4 +1,4 @@
-package springboot.springbean.pro;
+package springboot.springbean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,6 @@ import java.util.Map;
 @ConfigurationProperties("collection")
 public class Collection {
     private String[] names;
-    private User[] user;
     private List<String> list;
     private Map<String, String> map;
 
@@ -21,14 +20,6 @@ public class Collection {
 
     public void setNames(String[] names) {
         this.names = names;
-    }
-
-    public User[] getUser() {
-        return user;
-    }
-
-    public void setUser(User[] user) {
-        this.user = user;
     }
 
     public List<String> getList() {
@@ -49,7 +40,6 @@ public class Collection {
 
     public void show(){
         System.out.println(Arrays.toString(names));
-        System.out.println(Arrays.toString(user));
         System.out.println(list.toString());
         System.out.println(map.toString());
     }

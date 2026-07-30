@@ -14,6 +14,8 @@
 <!--        <param-value>classpath:request.xml</param-value>-->
 <!--        model.xml-->
 <!--        <param-value>classpath:model.xml</param-value>-->
+<!--            文件-->
+<!--        <param-value>classpath:document.xml</param-value>-->
 <!--        json.xml-->
         <param-value>classpath:json.xml</param-value>
 <!--             启用expection.xml配置 -->
@@ -42,7 +44,6 @@
             <param-value>UTF-8</param-value>
         </init-param>
     </filter>
-
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>

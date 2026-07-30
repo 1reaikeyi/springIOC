@@ -1,4 +1,4 @@
-package request.file;
+package file;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;
@@ -16,7 +16,7 @@ import java.nio.file.Files;
 public class DownloadController {
     @RequestMapping("/download")
     public ResponseEntity<byte[]> download(HttpServletRequest request) {
-        File file = new File("C:\\Users\\lenovo\\Desktop\\记录内容备份\\bili.jpg");
+        File file = new File("D:\\a.maven-java\\javacode\\spring\\wed\\src\\main\\webapp\\static\\牢 1.png");
         // 设置HTTP响应头
         HttpHeaders headers = new HttpHeaders();
         // 设置内容类型
