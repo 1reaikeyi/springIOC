@@ -10,6 +10,6 @@ public class Templates {
 //    @RequestMapping(value = {"/one","/two"})
     @RequestMapping(path = {"/one","/two"})
     public String one() {
-        return "/resources/cookie/second.html";
+        return "second";
     }
 }
