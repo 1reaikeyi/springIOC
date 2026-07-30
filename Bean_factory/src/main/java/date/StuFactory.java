@@ -1,4 +1,4 @@
-package cDate;
+package date;
 
 import org.springframework.beans.factory.FactoryBean;
 

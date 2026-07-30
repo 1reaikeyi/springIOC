@@ -1,4 +1,4 @@
-package afactorybean;
+package factorybean;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 

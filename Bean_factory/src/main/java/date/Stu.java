@@ -1,6 +1,5 @@
-package cDate;
+package date;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Stu {

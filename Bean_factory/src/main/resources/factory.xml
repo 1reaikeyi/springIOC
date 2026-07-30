@@ -8,13 +8,14 @@
        ">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <bean id="bean1" class="bfactory.A"/>
-<!--    静态-->
-    <bean id="bean2" class="bfactory.AFactory" factory-method="a"/>
-<!--    实例-->
-    <bean id="factory" class="bfactory.AFactory"/>
-    <bean id="bean3" factory-bean="factory" factory-method="getA"/>
+    <bean id="bean" class="factory.A"/>
 
-    <bean id="bean4" class="bfactory.AFactoryBean"/>
+<!--    静态-->
+    <bean id="beanstatic" class="factory.AFactory" factory-method="a"/>
+<!--    实例-->
+    <bean id="factory" class="factory.AFactory"/>
+    <bean id="beandynamic" factory-bean="factory" factory-method="getA"/>
+
+    <bean id="factoryA" class="factory.AFactoryBean"/>
 
 </beans>

@@ -8,11 +8,13 @@
        ">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <bean id="bean1" class="dlife.Lifecycle" init-method="ininBean" destroy-method="destroyBean">
-    <property name="id" value="1"/>
+    <bean id="onebean" class="mutualdependency.One" scope="singleton">
+        <property name="friend" value="first"/>
+        <property name="two" ref="twobean"/>
     </bean>
-    <bean class="dlife.Logbean"/>
-<!--    <bean id="bean2" class="dlife.Lifecycle" init-method="inin" destroy-method="destroy">-->
-<!--        <constructor-arg name="id" value="100"/>-->
-<!--    </bean>-->
+<!--    必须有一方是单例-->
+    <bean id="twobean" class="mutualdependency.Two" scope="prototype">
+        <property name="friend" value="second"/>
+        <property name="one" ref="onebean"/>
+    </bean>
 </beans>

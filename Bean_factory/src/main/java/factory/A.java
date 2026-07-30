@@ -1,4 +1,4 @@
-package bfactory;
+package factory;
 
 public class A {
     public A() {

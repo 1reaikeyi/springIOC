@@ -1,4 +1,4 @@
-package afactorybean;
+package factorybean;
 
 public class Stu {
     private int id;

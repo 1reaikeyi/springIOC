@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 根标签：Spring IoC容器的入口 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       ">
+
+    <!-- 此处配置Bean、依赖注入等内容 -->
+<!--    <bean id="life1" class="life.Life" init-method="ininBean" destroy-method="destroyBean">-->
+<!--        <property name="id" value="1"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="life2" class="life.Lifecycle" init-method="ininBean" destroy-method="destroyBean">-->
+<!--        <property name="id" value="2"/>-->
+<!--    </bean>-->
+
+    <bean id="life3" class="life.Lifecycle" init-method="ininBean" destroy-method="destroyBean">
+        <property name="id" value="3"/>
+    </bean>
+    <bean class="life.Logbean"/>
+
+
+</beans>
