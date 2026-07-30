@@ -1,13 +1,14 @@
-package springboot.springbean;
+package bean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
+import springbean.*;
 
 @EnableConfigurationProperties({Collection.class, Apro.class})
-@SpringBootTest(classes = springboot.Application.class)
+@SpringBootTest(classes = Application.class)
 class TestBean {
     @Autowired
     @Qualifier("xml")

@@ -1,4 +1,4 @@
-package springboot.springbean;
+package springbean;
 
 public class Out {
     private String name;

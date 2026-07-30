@@ -1,8 +1,8 @@
-package springboot.springaop;
+package aop;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class DaoImpl implements Dao{
     @Override
     public void save(String name) {
