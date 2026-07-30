@@ -1,4 +1,4 @@
-package intercept;
+package HandlerInterceptor;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

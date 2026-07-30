@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <context:component-scan base-package="expection"/>
+    <context:component-scan base-package="ExceptionHandler"/>
     <mvc:annotation-driven/>
     <!-- Thymeleaf视图解析器配置 -->
     <bean id="thymeleafViewResolver" class="org.thymeleaf.spring6.view.ThymeleafViewResolver">
