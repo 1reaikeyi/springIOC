@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/javawed/pom.xml" />
         <option value="$PROJECT_DIR$/spring_packing/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
