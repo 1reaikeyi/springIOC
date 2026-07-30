@@ -1,6 +1,7 @@
 package afacrory;
 
 import fnewto.Stu;
+import jdk.jfr.Enabled;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 
 public class NewtoSpring {
