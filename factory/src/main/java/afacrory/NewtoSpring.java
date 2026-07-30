@@ -1,3 +1,5 @@
+package afacrory;
+
 import fnewto.Stu;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 
