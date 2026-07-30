@@ -17,14 +17,14 @@ public class Request {
 //    }
     @RequestMapping("/http")
     public String testservlet(HttpServletRequest request) {
-        request.setAttribute("message", "httpservlrtr_key");
+        request.setAttribute("message", "httpservlrtr_value");
         System.out.println("http"+request.getAttribute("message"));
         System.out.println(request.getClass());
         return "www";
     }
     @RequestMapping("/model")
     public String testservlet(Model model) {
-        model.addAttribute("message", "model_key");
+        model.addAttribute("message", "model_value");
         System.out.println("model:"+model.getAttribute("message"));
         System.out.println(model.getClass());
         return "www";
@@ -38,7 +38,7 @@ public class Request {
     }
     @RequestMapping("/modelmap")
     public String testservlet(ModelMap modelMap) {
-        modelMap.addAttribute("message", "modelmap_key");
+        modelMap.addAttribute("message", "modelmap_value");
         System.out.println("ModelMap:"+modelMap.get("message"));
         System.out.println(modelMap.getClass());
         return "www";
@@ -46,7 +46,7 @@ public class Request {
     @RequestMapping("/modelAndView")
     public ModelAndView testservlet() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("message", "modelandview_key");
+        modelAndView.addObject("message", "modelandview_value");
         System.out.println("ModelAndView:"+modelAndView.getModel());
         System.out.println(modelAndView.getClass());
         modelAndView.setViewName("www");
