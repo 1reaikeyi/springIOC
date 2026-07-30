@@ -1,8 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
-<title>首页</title>
+<h2>Hello World!</h2>
 </body>
-        <h1>running......................................</h1>
-        <h2>完成</h2>
+        <a href="${pageContext.request.contextPath}/Index">Main</a>
 </html>
