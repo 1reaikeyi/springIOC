@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>usee_xml</module>
+        <module>usee_factory</module>
     </modules>
     <dependencies>
         <dependency>
