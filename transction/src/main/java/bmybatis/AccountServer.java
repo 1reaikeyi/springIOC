@@ -1,14 +1,17 @@
-package ajbdc;
+package bmybatis;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
-@Configuration
-@ComponentScan("ajbdc")
 @Component("account")
-public class Account {
+public class AccountServer {
     private String accountant;
     private int money;
+    public AccountServer() {
+    }
+
+    public AccountServer(String accountant, int money) {
+        this.accountant = accountant;
+        this.money = money;
+    }
 
     @Override
     public String toString() {
@@ -16,15 +19,6 @@ public class Account {
                 "accountant='" + accountant + '\'' +
                 ", money=" + money +
                 '}';
-    }
-
-    public Account() {
-
-    }
-
-    public Account(String accountant, int money) {
-        this.accountant = accountant;
-        this.money = money;
     }
 
     public String getAccountant() {

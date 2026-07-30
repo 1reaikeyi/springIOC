@@ -1,55 +1,54 @@
 package ajbdc;
 
-import bmybatis.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class AccountServer implements Dao{
+public class Server implements Dao{
     @Autowired
     private Dao dao;
 
-    public int insert(Account account) {
-        return dao.insert(account);
+    public int insert(bmybatis.AccountServer accountServer) {
+        return dao.insert(accountServer);
     }
 
-    public int update(Account account) {
-        return dao.update(account);
+    public int update(bmybatis.AccountServer accountServer) {
+        return dao.update(accountServer);
     }
 
     public int delete(String accountant) {
         return dao.delete(accountant);
     }
 
-    public Account selectById(String accountant) {
+    public bmybatis.AccountServer selectById(String accountant) {
         return dao.selectById(accountant);
     }
 
-    public List<Account> selectAll() {
+    public List<bmybatis.AccountServer> selectAll() {
         return dao.selectAll();
     }
     public void withdraw(String from, String to, int money) {
         // 2. 查询转出和转入账户
-        Account fromAccount = dao.selectById(from);
-        Account toAccount = dao.selectById(to);
+        bmybatis.AccountServer fromAccountServer = dao.selectById(from);
+        bmybatis.AccountServer toAccountServer = dao.selectById(to);
 
         // 3. 校验账户是否存在
-        if (fromAccount == null) {
+        if (fromAccountServer == null) {
             throw new RuntimeException("转出账户不存在: " + from);
         }
-        if (toAccount == null) {
+        if (toAccountServer == null) {
             throw new RuntimeException("转入账户不存在: " + to);
         }
 
         // 5. 执行转账逻辑
-        fromAccount.setmoney(fromAccount.getmoney() - money);
-        toAccount.setmoney(toAccount.getmoney() + money);
+        fromAccountServer.setmoney(fromAccountServer.getmoney() - money);
+        toAccountServer.setmoney(toAccountServer.getmoney() + money);
 
         // 6. 执行更新并校验结果
-        int updateFrom = dao.update(fromAccount);
-        int updateTo = dao.update(toAccount);
+        int updateFrom = dao.update(fromAccountServer);
+        int updateTo = dao.update(toAccountServer);
 
         if (updateFrom != 1) {
             throw new RuntimeException("转出账户更新失败");

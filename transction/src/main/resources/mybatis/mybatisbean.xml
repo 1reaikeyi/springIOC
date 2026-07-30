@@ -4,7 +4,7 @@
        xmlns="http://www.springframework.org/schema/beans" xmlns:tool="http://www.springframework.org/schema/tool"
        xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="bmybatis"/>
+
     <!-- 此处配置Bean、依赖注入等内容 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
@@ -27,6 +27,8 @@
         <property name="basePackage" value="bmybatis"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+
+    <context:component-scan base-package="bmybatis"/>
 <!--    开启事务注解驱动 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <!-- 配置事务管理器，引用之前定义的dataSource Bean -->

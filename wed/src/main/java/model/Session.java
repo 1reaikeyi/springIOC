@@ -1,4 +1,4 @@
-package yu;
+package model;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
