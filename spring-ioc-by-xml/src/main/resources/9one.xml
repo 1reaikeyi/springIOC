@@ -9,9 +9,9 @@
 
     <!-- 此处配置Bean、依赖注入等内容 -->
 <!--    1单例-->
-<!--    <bean id="onebean" scope="singleton" class="a9Single.One"/>-->
+<!--    <bean id="onebean" scope="singleton" class="a9Single.e6003.One"/>-->
 <!--    2多例-->
-    <bean id="onebean" scope="prototype" class="a9Single.One"/>
+    <bean id="onebean" scope="prototype" class="a9Single.e6003.One"/>
 <!--    3-->
 <!--    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">-->
 <!--        <property name="scopes">-->
@@ -22,5 +22,5 @@
 <!--    </bean>-->
 <!--    <bean id="threadScope" class="org.springframework.context.support.SimpleThreadScope"/>-->
 
-<!--    <bean id="onebean" scope="thread" class="a9Single.One"/>-->
+<!--    <bean id="onebean" scope="thread" class="a9Single.e6003.One"/>-->
 </beans>

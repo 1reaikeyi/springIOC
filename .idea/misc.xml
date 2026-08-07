@@ -23,11 +23,18 @@
         <option value="$PROJECT_DIR$/spring-rebuild-ioc/pom.xml" />
         <option value="$PROJECT_DIR$/spring-rebuild-web/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/s/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/euraka-6002/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/eureka-6002/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/client-6002/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/eureka-6003/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/s/pom.xml" />
       </set>
     </option>
   </component>

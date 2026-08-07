@@ -8,7 +8,7 @@
        ">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <bean id="onebean" class="mutualdependency.One" scope="singleton">
+    <bean id="onebean" class="mutualdependency.e6003.One" scope="singleton">
         <property name="friend" value="first"/>
         <property name="two" ref="twobean"/>
     </bean>
