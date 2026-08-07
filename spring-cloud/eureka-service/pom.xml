@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>eureka-6001</artifactId>
+    <artifactId>eureka-service</artifactId>
 
     <url/>
     <licenses>

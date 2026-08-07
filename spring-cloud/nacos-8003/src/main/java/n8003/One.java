@@ -1,4 +1,4 @@
-package n8002;
+package n8003;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,11 +13,14 @@ public class One {
 
     @RequestMapping("/one")
     public String one() {
-        return "two";
+        return "three";
     }
     @PostMapping("/two")
     public String two() {
-        return serviceClientImpt.two();
+        return serviceClientImpt.a();
     }
-
+    @PostMapping("/three")
+    public String three() {
+        return serviceClientImpt.b();
+    }
 }

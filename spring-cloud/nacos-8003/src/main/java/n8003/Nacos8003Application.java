@@ -1,4 +1,4 @@
-package n8002;
+package n8003;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,11 +9,11 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"clients"})
-@ComponentScan(basePackages = {"clients","service","n8002"})
-public class Nacos8002Application {
+@ComponentScan(basePackages = {"clients","service", "n8003"})
+public class Nacos8003Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Nacos8002Application.class, args);
+        SpringApplication.run(Nacos8003Application.class, args);
     }
 
 }

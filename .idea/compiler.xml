@@ -8,13 +8,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-6001" />
         <module name="spring-rebuild-ioc" />
+        <module name="nacos-8003" />
         <module name="spring-mvc" />
         <module name="nacos-8001" />
         <module name="nacos-8002" />
         <module name="spring-ioc-by-xml" />
         <module name="spring-rebuild-web" />
+        <module name="eureka-service" />
         <module name="spring-transaction" />
         <module name="spring-ioc-by-annotion" />
         <module name="spring-ioc-by-factory" />
@@ -34,11 +35,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="eureka-6001" options="-parameters" />
       <module name="eureka-6002" options="-parameters" />
       <module name="eureka-6003" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
       <module name="nacos-8001" options="-parameters" />
       <module name="nacos-8002" options="-parameters" />
+      <module name="nacos-8003" options="-parameters" />
       <module name="s" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
       <module name="spring-cloud" options="" />

@@ -20,7 +20,7 @@
         <developer/>
     </developers>
     <modules>
-        <module>eureka-6001</module>
+        <module>eureka-service</module>
     </modules>
     <scm>
         <connection/>
