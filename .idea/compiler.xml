@@ -11,6 +11,8 @@
         <module name="eureka-6001" />
         <module name="spring-rebuild-ioc" />
         <module name="spring-mvc" />
+        <module name="nacos-8001" />
+        <module name="nacos-8002" />
         <module name="spring-ioc-by-xml" />
         <module name="spring-rebuild-web" />
         <module name="spring-transaction" />
@@ -35,6 +37,8 @@
       <module name="eureka-6001" options="-parameters" />
       <module name="eureka-6002" options="-parameters" />
       <module name="eureka-6003" options="-parameters" />
+      <module name="nacos-8001" options="-parameters" />
+      <module name="nacos-8002" options="-parameters" />
       <module name="s" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
       <module name="spring-cloud" options="" />

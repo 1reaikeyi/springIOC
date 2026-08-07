@@ -1,6 +1,8 @@
 # Spring 全家桶
 
-从 Java SE 到 Spring Cloud 的渐进式学习实践
+spring-ioc-aop-orm-mvc-cloud
+
+![start](封面.png)
 
 ---
 
@@ -22,9 +24,11 @@
 | spring-boot            | Spring Boot 快速开发（自动配置、Web、AOP、Lombok）          |
 | spring-cloud           | Spring Cloud 微服务（了解nacos+gateway）              |
 
----
+| 1                       | 2                  | 3                   |
+| ----------------------- | ------------------ | ------------------- |
+| ![start](framework.png) | ![start](boot.png) | ![start](cloud.png) |
 
-## 核心
+## spring
 
 - **IOC**：控制反转，由 Spring 容器管理对象生命周期和依赖注入
 - **AOP**：面向切面编程，通过代理实现横切关注点的统一处理
@@ -41,9 +45,9 @@
 
 - **Spring Framework** 6+
 
-- **Spring boot** 3.5.*
+- **Spring boot** 3.5.+
 
-- **Spring cloud**  2025.*
+- **Spring cloud**  2025.+
 
   
 
