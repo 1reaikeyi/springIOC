@@ -16,8 +16,13 @@ public class One {
     @Autowired
     private RestTemplate restTemplate;
     @PostMapping("/in")
-    public String two() {
+    public String in() {
         String url = "http://eureka-service/one";
+        return restTemplate.getForObject(url, String.class);
+    }
+    @PostMapping("/two")
+    public String three() {
+        String url = "http://eureka-client2/one";
         return restTemplate.getForObject(url, String.class);
     }
 
