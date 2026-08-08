@@ -34,7 +34,7 @@ spring:
               enabled: true
           # 默认过滤器：对所有路由生效，统一添加请求头 Truth
           default-filters:
-            - AddRequestHeader=Truth, this is freaking awesome!
+            - AddRequestHeader=Truth, this!
           # 路由配置
           routes:
             - id: any-to-8003-route
@@ -44,7 +44,7 @@ spring:
                 - Path=/**
               # 过滤器：AddRequestHeader 以 name+args 形式声明，更清晰
               filters:
-                - AddRequestHeader=Truth, this is freaking awesome!
+                - AddRequestHeader=Truth, that!
           # 全局跨域配置
           globalcors:
             # 让跨域配置对简单 URL Handler 也生效
