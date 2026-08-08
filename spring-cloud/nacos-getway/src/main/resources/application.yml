@@ -1,0 +1,66 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: nacos-8010
+  config:
+    import: optional:nacos:calendar.yaml
+  cloud:
+    # 负载均衡：启用 Nacos 负载均衡器（同集群优先 + 按 Nacos 权重）
+    loadbalancer:
+      nacos:
+        enabled: true
+
+    nacos:
+      # 服务发现
+      discovery:
+        server-addr: 192.168.80.128:8848
+        username: nacos
+        password: nacos
+        cluster-name: BJ
+      # 配置中心
+      config:
+        server-addr: 192.168.80.128:8848
+        username: nacos
+        password: nacos
+
+    gateway:
+      server:
+        webflux:
+          # 开启服务发现自动路由（按服务名 lb://xxx 自动生成路由）
+          discovery:
+            locator:
+              enabled: true
+          # 默认过滤器：对所有路由生效，统一添加请求头 Truth
+          default-filters:
+            - AddRequestHeader=Truth, this is freaking awesome!
+          # 路由配置
+          routes:
+            - id: any-to-8003-route
+              uri: lb://nacos-8003
+              # 断言：匹配任意路径 /**
+              predicates:
+                - Path=/**
+              # 过滤器：AddRequestHeader 以 name+args 形式声明，更清晰
+              filters:
+                - AddRequestHeader=Truth, this is freaking awesome!
+          # 全局跨域配置
+          globalcors:
+            # 让跨域配置对简单 URL Handler 也生效
+            add-to-simple-url-handler-mapping: true
+            cors-configurations:
+              '[/**]':
+                allowed-origins:
+                  - http://localhost:8090
+                allowed-methods:
+                  - GET
+                  - POST
+                  - DELETE
+                  - PUT
+                  - OPTIONS
+                # "*" 在 yaml 中需加引号，否则会被当作别名符号
+                allowed-headers: "*"
+                allow-credentials: true
+                max-age: 360000
+

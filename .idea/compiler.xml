@@ -14,19 +14,20 @@
         <module name="nacos-8001" />
         <module name="nacos-8002" />
         <module name="spring-ioc-by-xml" />
+        <module name="nacos-getway" />
         <module name="spring-rebuild-web" />
-        <module name="eureka-service" />
         <module name="spring-transaction" />
         <module name="spring-ioc-by-annotion" />
         <module name="spring-ioc-by-factory" />
         <module name="spring-security" />
         <module name="spring-boot" />
         <module name="spring-aop" />
-        <module name="eureka-6003" />
-        <module name="eureka-6002" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka-6002" target="17" />
+      <module name="eureka-6003" target="17" />
+      <module name="eureka-service" target="17" />
       <module name="s" target="17" />
       <module name="spring.mybatis" target="17" />
       <module name="spring_jdbc" target="17" />
@@ -41,6 +42,7 @@
       <module name="nacos-8001" options="-parameters" />
       <module name="nacos-8002" options="-parameters" />
       <module name="nacos-8003" options="-parameters" />
+      <module name="nacos-getway" options="-parameters" />
       <module name="s" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
       <module name="spring-cloud" options="" />

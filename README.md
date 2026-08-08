@@ -22,7 +22,7 @@ spring-ioc-aop-orm-mvc-cloud
 | spring-mvc             | Spring MVC（请求处理、JSON、文件上传下载、拦截器）               |
 | spring-orm             | Spring orm（请求数据库，对象关系映射）                       |
 | spring-boot            | Spring Boot 快速开发（自动配置、Web、AOP、Lombok）          |
-| spring-cloud           | Spring Cloud 微服务（了解nacos+gateway）              |
+| spring-cloud           | Spring Cloud 微服务（主要是nacos+gateway+负载均衡）        |
 
 | 1                       | 2                  | 3                   |
 | ----------------------- | ------------------ | ------------------- |
@@ -35,7 +35,7 @@ spring-ioc-aop-orm-mvc-cloud
 - **ORM**：对象关系映射
 - **Spring Web**：基于Servlet实现MVC架构，负责接收HTTP请求、参数解析、控制器调度、视图/JSON响应.
 - **Spring Boot**：约定优于配置，简化 Spring 应用开发
-- **Spring Cloud**：微服务治理套件，提供服务发现、配置管理等能力（了解nacos+gateway）
+- **Spring Cloud**：微服务治理套件，提供服务发现、配置管理等能力（只对nacos+gateway+负载均衡学习和了解）
 
 ---
 

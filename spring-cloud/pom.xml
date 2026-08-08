@@ -20,7 +20,10 @@
         <developer/>
     </developers>
     <modules>
-        <module>eureka-service</module>
+        <module>nacos-8001</module>
+        <module>nacos-8002</module>
+        <module>nacos-8003</module>
+        <module>nacos-getway</module>
     </modules>
     <scm>
         <connection/>

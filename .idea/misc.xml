@@ -26,12 +26,11 @@
         <option value="$PROJECT_DIR$/spring-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/s/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/euraka-6002/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/eureka-6002/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/client-6002/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/eureka-6003/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/nacos-8001/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/nacos-8002/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/nacos-8003/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/nacos-getway/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

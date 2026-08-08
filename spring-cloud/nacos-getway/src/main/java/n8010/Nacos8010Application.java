@@ -1,19 +1,17 @@
-package n8001;
+package n8010;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"n8001","properties"})
 @EnableDiscoveryClient
 @EnableConfigurationProperties
-public class Nacos8001Application {
+public class Nacos8010Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Nacos8001Application.class, args);
+        SpringApplication.run(Nacos8010Application.class, args);
     }
 
 }
