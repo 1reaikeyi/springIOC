@@ -7,7 +7,7 @@
        ">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-    <bean id="xml" class="bean.XmlBean">
+    <bean id="xml" class="bean.文件.XmlBean">
         <property name="name" value="xmlbean"/>
     </bean>
 </beans>

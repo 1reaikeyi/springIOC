@@ -14,5 +14,4 @@ public class Aop {
         dao.save("小明");
         dao.delete(1);
     }
-
 }

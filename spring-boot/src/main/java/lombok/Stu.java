@@ -1,24 +1,27 @@
 package lombok;
 @ToString
-@NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Getter @Setter
 public class Stu {
-    @Getter @Setter
+
     private String name;
 
-    @Getter @Setter
     private int age;
 
-    @NonNull @Getter @Setter
-    private String email;
+    @NonNull
+    private String email1;
 
-    public Stu(String name, String email) {
+    private final String email2;
+
+    public Stu(String name, String email1, String email2) {
         this.name = name;
-        this.email = email;
+        this.email2 = email2;
+        this.email1 = email1;
     }
-    public Stu(int age, String email) {
+    public Stu(int age, String email1, String email2) {
         this.age = age;
-        this.email = email;
+        this.email2 = email2;
+        this.email1 = email1;
     }
 }
