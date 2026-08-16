@@ -11,7 +11,7 @@
            http://www.springframework.org/schema/mvc
            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!-- 扫描 Controller -->
+    <!-- 扫描 annotion.Controller -->
     <context:component-scan base-package="web"/>
 
     <!-- 启用注解驱动 -->

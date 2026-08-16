@@ -1,4 +1,4 @@
-package sercurity.service;
+package sercurity.pojo;
 
 
 import com.baomidou.mybatisplus.annotation.TableField;

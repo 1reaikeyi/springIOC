@@ -1,4 +1,4 @@
-package sercurity.Controller;
+package sercurity.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;

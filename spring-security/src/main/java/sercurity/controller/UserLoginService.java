@@ -1,4 +1,4 @@
-package sercurity.Controller;
+package sercurity.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import sercurity.service.UserMapper;
-import sercurity.service.UserPojo;
+import sercurity.pojo.UserMapper;
+import sercurity.pojo.UserPojo;
 
 @Service
 public class UserLoginService implements UserDetailsService {

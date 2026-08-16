@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 根标签：Spring IoC容器的入口 -->
 <beans>
-    <bean id="userBean" class="bean.User">
+    <bean id="userBean" class="pojo.User">
         <property name="username" value="张三"></property>
         <property name="id" value="18"></property>
     </bean>
 
-    <bean id="userDao" class="bean.UserDao"/>
+    <bean id="userMapper" class="pojo.UserMapper"/>
 
-    <bean id="service" class="bean.Server">
-        <property name="userDao" ref="userDao"></property>
+    <bean id="service" class="pojo.UserServer">
+        <property name="userMapper" ref="userMapper"></property>
     </bean>
 
 </beans>
