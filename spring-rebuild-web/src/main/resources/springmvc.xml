@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 <!--    组件扫描-->
-    <component-scan base0package="use"/>
+    <component-scan base-package="test"/>
 <!--    视图-->
     <bean class="mvc.view">
         <property name="prefix" value="web/"/>
@@ -9,7 +9,7 @@
     </bean>
 <!--    拦截器-->
     <interceptors>
-        <bean class="use.Interceptor1.java"/>
-        <bean class="use.Interceptor2.java"/>
+        <bean class="mvc.interceptor.Interceptor1.java"/>
+        <bean class="mvc.interceptor.Interceptor2.java"/>
     </interceptors>
 </beans>

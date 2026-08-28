@@ -1,12 +1,11 @@
 package config;
 
-import ch.qos.logback.classic.Logger;
+
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
-import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 
 public class ClassPathXmlAppplicationContext implements ApplicationContext {
-    private static Logger logger = (Logger) LoggerFactory.getLogger(ClassPathXmlAppplicationContext.class);
     Map<String, Object> objectMap = new HashMap<>();
     public ClassPathXmlAppplicationContext(String configLocation) {
         SAXReader saxReader = new SAXReader();
@@ -32,24 +30,29 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+/**
+ *     <bean id="userBean" class="pojo.User">
+ *         <property name="username" value="张三"></property>
+ *         <property name="id" value="18"></property>
+ *     </bean>
+ */
         try {
-            //获取<标签/>
             List<Node> nodes = document.selectNodes("//bean");
+            //class
             for (Node node : nodes) {
                 Element element = (Element) node;
                 String id = element.attributeValue("id");
-                logger.info("id = " + id);
                 String className = element.attributeValue("class");
-                logger.info("className = " + className);
+                System.out.println("id = " + id);
+                System.out.println("className = " + className);
                 //通过反射获取对象
                 Class<?> aClass = Class.forName(className);
                 //获取构造器,创建对象
                 Constructor<?> constructor = aClass.getDeclaredConstructor();
                 Object object = constructor.newInstance();
                 objectMap.put(id, object);
-                logger.info("object = " + object);
+                System.out.println("object = " + object);
             }
-            System.out.println();
             //setter注入
             for (Node node : nodes) {
                 Element element = (Element) node;
@@ -59,7 +62,7 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
                 if (property.isEmpty()) {
                     continue;
                 };
-                logger.info("className = " + className);
+                System.out.println("property = " + property);
                 //反射创建对象
                 Class<?> aClass = Class.forName(className);
                 Object targetObject = objectMap.get(id);
@@ -67,14 +70,13 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
                     String propertyName = pro.attributeValue("name");
                     String propertyValue = pro.attributeValue("value");
                     String propertyRef = pro.attributeValue("ref");
-                    logger.info("propertyName = " + propertyName);
-                    logger.info("propertyValue = " + propertyValue);
-                    logger.info("propertyRef = " + propertyRef);
+                    System.out.println("propertyName = " + propertyName);
+                    System.out.println("propertyValue = " + propertyValue);
+                    System.out.println("propertyRef = " + propertyRef);
 
                     // 首先尝试使用属性名生成的标准setter方法名
                     String setterMethodName = "set" + propertyName.substring(0, 1).toUpperCase() + propertyName.substring(1);
-                    logger.info("尝试setterMethodName = " + setterMethodName);
-
+                    System.out.println("setterMethodName = " + setterMethodName);
                     //获取属性字段（使用getDeclaredField可以获取private字段）
                     Field field = aClass.getDeclaredField(propertyName);
                     //获取setter方法
@@ -84,13 +86,13 @@ public class ClassPathXmlAppplicationContext implements ApplicationContext {
                     if (propertyRef != null) {
                         Object refObject = objectMap.get(propertyRef);
                         setter.invoke(targetObject, refObject);
-                        logger.info("成功注入引用: " + propertyRef + " 到 " + className + "\t" + propertyName);
+                        System.out.println("refObject = " + refObject);
                     }
 
                     if (propertyValue != null) {
                         Object typeValue = typeValue(propertyValue, fieldType);
                         setter.invoke(targetObject, typeValue);
-                        logger.info("成功注入值: " + propertyValue + " 到 " + className + "\t" + propertyName);
+                        System.out.println("typeValue = " + typeValue);
                     }
                 }
             }
